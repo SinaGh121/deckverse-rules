@@ -5,6 +5,42 @@
     <style type="text/css">
         @import url(https://themes.googleusercontent.com/fonts/css?kit=C0sztSxPeEjvdBkDoEEUfeREgHmN9m12z9MEIeMRPIg);
 
+        html,
+        body {
+            direction: rtl;
+        }
+
+        /* Use logical alignment so it follows direction */
+        p,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: start !important;
+        }
+
+        /* Lists: keep bullets/numbers on the right in RTL */
+        ul,
+        ol {
+            direction: rtl;
+            padding-inline-start: 1.25rem;
+            padding-inline-end: 0;
+        }
+
+        /* Images and tables stay responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
         ul.lst-kix_bfcgezbk6qq6-4 {
             list-style-type: none
         }

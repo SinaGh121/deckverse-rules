@@ -1,33 +1,39 @@
-/* Base: shared for both FA and EN */
+:root {
+  --row-blue: #2196f340;
+  --row-orange: #ff980040;
+  --row-green: #4caf5040;
+  --row-purple: #9c27b040;
+  --row-red: #f4433640;
+  --row-yellow: #ffeb3b40;
+}
+
 :root {
   --thumb-w: 200px;
 }
 
-html, body {
-  /* default Latin stack; FA will override via :lang */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+html,
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
 }
 
 :lang(fa) body {
-  /* Persian font for FA */
-  font-family: "Vazirmatn", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Vazirmatn", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 .page {
   max-width: 800px;
-  margin-inline: auto; /* logical, works LTR/RTL */
+  margin-inline: auto;
 }
 
 .role {
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  padding-block: 16px; /* logical padding */
-  /* default flow for LTR; RTL will override below */
+  padding-block: 16px;
   flex-direction: row-reverse;
 }
-
-/* [dir="rtl"] .role { flex-direction: row-reverse; } */
 
 .role .thumb {
   width: var(--thumb-w);
@@ -36,7 +42,7 @@ html, body {
 
 .role .desc {
   flex: 1 1 0;
-  text-align: start; /* auto right/left based on dir */
+  text-align: start;
 }
 
 @media (max-width: 600px) {
@@ -52,13 +58,12 @@ html, body {
   }
 }
 
-/* Table */
 table.role-grid {
   width: 100%;
   border-collapse: collapse;
-  margin-block: 1.2em; /* logical margins */
+  margin-block: 1.2em;
   table-layout: fixed;
-  --others: 6; /* number of non-first columns */
+  --others: 6;
 }
 
 .role-grid col.col-first {
@@ -71,19 +76,38 @@ table.role-grid {
 .role-grid th,
 .role-grid td {
   overflow-wrap: anywhere;
-  border: 1px solid;
   padding: 0.6em 0.8em;
   text-align: center;
   vertical-align: middle;
+  border: 1px solid;
 }
 
 .role-grid th:first-child,
 .role-grid td:first-child {
-  text-align: start; /* left in EN, right in FA */
+  text-align: start;
 }
 
 .role-grid caption {
   caption-side: bottom;
   text-align: start;
   margin-block-start: 0.6em;
+}
+
+.role-grid .cell-blue {
+  background: var(--row-blue);
+}
+.role-grid .cell-orange {
+  background: var(--row-orange);
+}
+.role-grid .cell-green {
+  background: var(--row-green);
+}
+.role-grid .cell-purple {
+  background: var(--row-purple);
+}
+.role-grid .cell-red {
+  background: var(--row-red);
+}
+.role-grid .cell-yellow {
+  background: var(--row-yellow);
 }

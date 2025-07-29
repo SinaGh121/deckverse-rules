@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Werewolf — DeckVerse Rules</title>
+  <meta name="description" content="Official Werewolf scenario rules for DeckVerse: setup, roles, night/day phases, voting, and variants.">
+  <link rel="canonical" href="https://example.com/scenarios/werewolf/">
+  <meta property="og:title" content="Werewolf — DeckVerse Rules">
+  <meta property="og:description" content="Setup, roles, phases, and variants for DeckVerse Werewolf.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="/assets/deckverse-logo.svg">
+  <link rel="icon" href="/assets/deckverse-logo.svg">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a class="btn" href="/">← Scenarios</a>
+      <div class="brand">DeckVerse • Werewolf</div>
+    </div>
+
+    <nav>
+      <div class="tabs">
+        <a class="tab" href="#overview">Overview</a>
+        <a class="tab" href="#setup">Setup</a>
+        <a class="tab" href="#roles">Roles</a>
+        <a class="tab" href="#phases">Phases</a>
+        <a class="tab" href="#voting">Voting</a>
+        <a class="tab" href="#end">Endgame</a>
+        <a class="tab" href="#variants">Variants</a>
+        <a class="tab" href="#faq">FAQ</a>
+      </div>
+    </nav>
+
+    <section id="overview" class="card">
+      <h1>Overview</h1>
+      <p>Werewolf is a social deduction game. The village tries to identify and eliminate the Werewolves by voting during the day, while the Werewolves secretly eliminate a player each night.</p>
+      <p><strong>Players:</strong> 6–20 • <strong>Time:</strong> 10–45 min • <strong>Teams:</strong> Village vs. Werewolves (plus optional third-party roles)</p>
+    </section>
+
+    <section id="setup" class="card">
+      <h2>Setup</h2>
+      <ol>
+        <li>Gather players in a circle and choose a <strong>Moderator</strong> (or use the DeckVerse app).</li>
+        <li>Select a role set based on player count (see templates below).</li>
+        <li>Shuffle roles and deal one face-down to each player. Players keep roles secret.</li>
+        <li>Moderator explains win conditions and timing, then starts the first Night.</li>
+      </ol>
+      <h3>Role templates</h3>
+      <table>
+        <thead><tr><th>Players</th><th>Suggested roles</th></tr></thead>
+        <tbody>
+          <tr><td>6–7</td><td>2 Werewolves, 1 Seer, 1 Doctor, Villagers</td></tr>
+          <tr><td>8–10</td><td>3 Werewolves, 1 Seer, 1 Doctor, 1 Hunter, Villagers</td></tr>
+          <tr><td>11–14</td><td>3–4 Werewolves, 1 Seer, 1 Doctor, 1 Hunter, 1 Bodyguard, Villagers</td></tr>
+          <tr><td>15–20</td><td>4–5 Werewolves, 1 Seer, 1 Doctor, 1 Hunter, 1 Bodyguard, 1 Witch, Villagers</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">Adjust based on group experience and desired chaos.</p>
+    </section>
+
+    <section id="roles" class="card">
+      <h2>Roles</h2>
+      <table>
+        <thead><tr><th>Role</th><th>Team</th><th>Ability</th></tr></thead>
+        <tbody>
+          <tr><td>Villager</td><td>Village</td><td>No night action. Votes during day.</td></tr>
+          <tr><td>Werewolf</td><td>Werewolves</td><td>At night, agree on one target to eliminate.</td></tr>
+          <tr><td>Seer</td><td>Village</td><td>Each night: learn if one player is a Werewolf.</td></tr>
+          <tr><td>Doctor</td><td>Village</td><td>Each night: protect one player from elimination (self-protect optional).</td></tr>
+          <tr><td>Hunter</td><td>Village</td><td>On death: immediately take one player with them.</td></tr>
+          <tr><td>Bodyguard</td><td>Village</td><td>Each night: guard one player; if attacked, BG dies instead.</td></tr>
+          <tr><td>Witch</td><td>Village</td><td>Has one heal and one poison for the entire game; uses at night.</td></tr>
+          <tr><td>Tanner (optional)</td><td>Neutral</td><td>Wants to be eliminated during the day to win alone.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="phases" class="card">
+      <h2>Phases</h2>
+      <h3>Night</h3>
+      <ol>
+        <li>Moderator: “Everyone close your eyes.”</li>
+        <li>Werewolves open eyes and silently pick a target.</li>
+        <li>Doctor selects someone to protect.</li>
+        <li>Seer checks one player’s alignment.</li>
+        <li>Other special roles act as applicable.</li>
+        <li>Moderator: “Night ends.”</li>
+      </ol>
+      <h3>Day</h3>
+      <ol>
+        <li>Moderator announces if anyone was eliminated overnight.</li>
+        <li>Open discussion. Players may accuse, defend, and share suspicions.</li>
+        <li><strong>Lynch vote:</strong> Use majority voting. Optional: timed discussion (e.g., 3–5 minutes).</li>
+        <li>Eliminated players reveal role and leave the circle (no table talk).</li>
+      </ol>
+    </section>
+
+    <section id="voting" class="card">
+      <h2>Voting & timing</h2>
+      <ul>
+        <li>Use simple majority to eliminate during day. On ties, revote; if tied again, no one is eliminated.</li>
+        <li>Recommended round pacing: <span class="kbd">Night: 30–60s</span>, <span class="kbd">Day: 3–5min</span>, <span class="kbd">Vote: 30s</span>.</li>
+        <li>Silent/thumbs voting helps large groups. Use the DeckVerse timer if available.</li>
+      </ul>
+    </section>
+
+    <section id="end" class="card">
+      <h2>Endgame & win conditions</h2>
+      <ul>
+        <li><strong>Village wins</strong> when all Werewolves are eliminated.</li>
+        <li><strong>Werewolves win</strong> when they are equal to or outnumber the remaining players.</li>
+        <li>Some optional roles (e.g., Tanner) have unique win conditions.</li>
+      </ul>
+    </section>
+
+    <section id="variants" class="card">
+      <h2>Variants & house rules</h2>
+      <ul>
+        <li><strong>No first-night kill:</strong> First night ends without a kill to ease in new players.</li>
+        <li><strong>Reveal/no-reveal:</strong> Decide whether eliminated players reveal roles.</li>
+        <li><strong>Secret Doctor:</strong> Doctor cannot self-protect twice in a row (optional).</li>
+        <li><strong>Seer cadence:</strong> Seer acts every night or odd nights only.</li>
+        <li><strong>Open roles list:</strong> Reveal which roles are in the game, but not who has them.</li>
+      </ul>
+    </section>
+
+    <section id="faq" class="card">
+      <h2>FAQ</h2>
+      <h3>Can players talk at night?</h3>
+      <p>No. Only roles that act at night open their eyes. Everyone else remains silent.</p>
+      <h3>What if the Werewolves and Doctor target the same player?</h3>
+      <p>The target survives if protected that night.</p>
+      <h3>Can eliminated players speak?</h3>
+      <p>No. They leave the circle and may not influence the game.</p>
+    </section>
+
+    <footer>
+      <hr>
+      <p><a href="/">← Back to Scenarios</a></p>
+      <p style="color:#b8b8b8">DeckVerse Werewolf rules. For feedback, contact support in the app.</p>
+    </footer>
+  </div>
+</body>
+</html>

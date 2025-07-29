@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DeckVerse Rules</title>
+  <meta name="description" content="Official rules for DeckVerse scenarios.">
+  <link rel="canonical" href="https://example.com/">
+  <meta property="og:title" content="DeckVerse Rules">
+  <meta property="og:description" content="Official rules for DeckVerse scenarios.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/deckverse-logo.svg">
+  <link rel="icon" href="/assets/deckverse-logo.svg">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo"></div>
+      <div class="brand">DeckVerse • Rules</div>
+    </div>
+
+    <div class="card">
+      <h1>Scenarios</h1>
+      <p>Choose a scenario to view its complete rules, roles, setup, and variations.</p>
+      <div class="grid">
+        <div class="card">
+          <h2>Werewolf</h2>
+          <p>Social deduction. Villagers vs. Werewolves. At night the wolves strike, by day the village votes.</p>
+          <a class="btn" href="/scenarios/werewolf/">Open rules →</a>
+          <div style="margin-top:8px">
+            <span class="badge">Players: 6–20</span>
+            <span class="badge">Time: 10–45 min</span>
+          </div>
+        </div>
+        <!-- Add more scenarios as you create them -->
+      </div>
+    </div>
+
+    <footer>
+      © <span id="y"></span> DeckVerse. All rights reserved. • <a href="https://deckverse.app" target="_blank" rel="noopener">App</a>
+    </footer>
+  </div>
+  <script>
+    // Minimal enhancement
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

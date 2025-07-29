@@ -1,40 +1,52 @@
-body {
-  font-family: "Vazirmatn", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+/* Base: shared for both FA and EN */
+:root {
+  --thumb-w: 200px;
+}
+
+html, body {
+  /* default Latin stack; FA will override via :lang */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+:lang(fa) body {
+  /* Persian font for FA */
+  font-family: "Vazirmatn", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .page {
   max-width: 800px;
-  margin: auto;
+  margin-inline: auto; /* logical, works LTR/RTL */
 }
 
 .role {
   display: flex;
-  flex-direction: row-reverse;
   align-items: flex-start;
   gap: 24px;
-  padding: 16px 0;
+  padding-block: 16px; /* logical padding */
+  /* default flow for LTR; RTL will override below */
+  flex-direction: row-reverse;
 }
 
+/* [dir="rtl"] .role { flex-direction: row-reverse; } */
+
 .role .thumb {
-  width: 200px;
+  width: var(--thumb-w);
   border-radius: 12px;
 }
 
 .role .desc {
   flex: 1 1 0;
-  text-align: right;
+  text-align: start; /* auto right/left based on dir */
 }
 
 @media (max-width: 600px) {
   .role {
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
   }
-
   .role .thumb {
     width: 100%;
-    max-width: 200px;
+    max-width: var(--thumb-w);
     flex: 0 0 auto;
     margin-inline: auto;
   }
@@ -44,12 +56,11 @@ body {
 table.role-grid {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.2em 0;
+  margin-block: 1.2em; /* logical margins */
   table-layout: fixed;
-  --others: 6; /* set to number of non-first columns */
+  --others: 6; /* number of non-first columns */
 }
 
-/* First column = 2 units, others = 1 unit each */
 .role-grid col.col-first {
   width: calc(2 * 100% / (var(--others) + 2));
 }
@@ -57,27 +68,22 @@ table.role-grid {
   width: calc(100% / (var(--others) + 2));
 }
 
-/* Optional: better wrapping for long Farsi words */
 .role-grid th,
 .role-grid td {
   overflow-wrap: anywhere;
-}
-
-table.role-grid th,
-table.role-grid td {
   border: 1px solid;
   padding: 0.6em 0.8em;
   text-align: center;
   vertical-align: middle;
 }
 
-table.role-grid th:first-child,
-table.role-grid td:first-child {
-  text-align: right;
+.role-grid th:first-child,
+.role-grid td:first-child {
+  text-align: start; /* left in EN, right in FA */
 }
 
-table.role-grid caption {
+.role-grid caption {
   caption-side: bottom;
-  text-align: right;
-  margin-top: 0.6em;
+  text-align: start;
+  margin-block-start: 0.6em;
 }

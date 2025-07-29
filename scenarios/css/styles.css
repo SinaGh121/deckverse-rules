@@ -46,6 +46,21 @@ table.role-grid {
   border-collapse: collapse;
   margin: 1.2em 0;
   table-layout: fixed;
+  --others: 6; /* set to number of non-first columns */
+}
+
+/* First column = 2 units, others = 1 unit each */
+.role-grid col.col-first {
+  width: calc(2 * 100% / (var(--others) + 2));
+}
+.role-grid col.col-rest {
+  width: calc(100% / (var(--others) + 2));
+}
+
+/* Optional: better wrapping for long Farsi words */
+.role-grid th,
+.role-grid td {
+  overflow-wrap: anywhere;
 }
 
 table.role-grid th,

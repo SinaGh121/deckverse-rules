@@ -541,11 +541,18 @@
     <!-- Roles Setup Table -->
     <section id="setup">
       <h2>چیدمان نقش‌ها</h2>
-      <table class="role-grid">
+      <table class="role-grid" id="roleGrid">
         <caption>
           تبصره: در سناریوهای ۸ و ۹ نفره، گرگ سیاه حضور ندارد؛ اما هر دو گرگینه
           توانایی «تبدیل» گرگ سیاه را دارند.
         </caption>
+
+        <!-- colgroup: first col = 2 units, others = 1 unit -->
+        <colgroup>
+          <col class="col-first">
+          <col class="col-rest" span="6"><!-- 6 other columns -->
+        </colgroup>
+
         <thead>
           <tr>
             <th>تعداد</th>

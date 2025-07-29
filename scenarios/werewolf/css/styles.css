@@ -63,51 +63,6 @@ table.role-grid td:first-child {
 
 table.role-grid caption {
   caption-side: bottom;
-  text-align: center;
+  text-align: right;
   margin-top: 0.6em;
-}
-
-/* Cell colors */
-.bg-light-green-3 {
-  background: #d9ead3;
-}
-
-.bg-light-red-3 {
-  background: #f4cccc;
-}
-
-.bg-light-purple-3 {
-  background: #d9d2e9;
-}
-
-.bg-light-magenta-3 {
-  background: #ead1dc;
-}
-
-.bg-light-blue-3 {
-  background: #cfe2f3;
-}
-
-.bg-light-yellow-1 {
-  background: #ffd966;
-}
-
-.bg-light-green-1 {
-  background: #93c47d;
-}
-
-.bg-light-red-1 {
-  background: #e06666;
-}
-
-.bg-light-purple-1 {
-  background: #8e7cc3;
-}
-
-.bg-light-magenta-1 {
-  background: #c27ba0;
-}
-
-.bg-light-blue-1 {
-  background: #6fa8dc;
 }

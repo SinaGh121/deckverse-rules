@@ -1,0 +1,1022 @@
+{
+  "scenarios": [
+    {
+      "name": "Werewolf 1.4",
+      "nameFa": "گرگینه ۱.۴",
+      "colorCode": 1,
+      "help": "https://sinagh121.github.io/deckverse-rules/scenarios/werewolf/en/",
+      "helpFa": "https://sinagh121.github.io/deckverse-rules/scenarios/werewolf/fa/",
+      "characters": [
+        {
+          "name": "Alpha",
+          "nameFa": "آلفا",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "alpha_1.jpg"
+        },
+        {
+          "name": "Black Wolf",
+          "nameFa": "گرگ سیاه",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "werewolf_5.jpg"
+        },
+        {
+          "name": "Wizard",
+          "nameFa": "جادوگر",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "poisoner_1.jpg"
+        },
+        {
+          "name": "Werewolf",
+          "nameFa": "گرگینه ساده",
+          "color": "#f44336",
+          "count": 0,
+          "avatar": "werewolf_2.jpg"
+        },
+        {
+          "name": "Villager",
+          "nameFa": "روستایی ساده",
+          "color": "#2196f3",
+          "count": 2,
+          "avatar": "villager_1.jpg"
+        },
+        {
+          "name": "Special Villager",
+          "nameFa": "روستایی ویژه",
+          "color": "#2196f3",
+          "count": 0,
+          "avatar": "general_2.jpg"
+        },
+        {
+          "name": "Alchemist",
+          "nameFa": "کیمیاگر",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "alchemist_1.jpg"
+        },
+        {
+          "name": "Guard",
+          "nameFa": "محافظ",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "guard_1.jpg"
+        },
+        {
+          "name": "Seer",
+          "nameFa": "پیشگو",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "seer_1.jpg"
+        },
+        {
+          "name": "Resurrector",
+          "nameFa": "احیاگر",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "resurrector_1.jpg"
+        },
+        {
+          "name": "Hunter",
+          "nameFa": "شکارچی",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "hunter_1.jpg"
+        },
+        {
+          "name": "Red Riding Hood",
+          "nameFa": "شنل قرمزی",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "red_riding_hood_1.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Mafia - Classic 1.2",
+      "nameFa": "مافیا - کلاسیک ۱.۲",
+      "colorCode": 9,
+      "help": "https://sinagh121.github.io/deckverse-rules/scenarios/werewolf/en/",
+      "helpFa": "https://sinagh121.github.io/deckverse-rules/scenarios/werewolf/fa/",
+      "characters": [
+        {
+          "name": "Don",
+          "nameFa": "دون مافیا",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "godfather_1.jpg"
+        },
+        {
+          "name": "Mafia",
+          "nameFa": "مافیا",
+          "color": "#f44336",
+          "count": 2,
+          "avatar": "mafia_2.jpg"
+        },
+        {
+          "name": "Citizen",
+          "nameFa": "شهروند",
+          "color": "#2196f3",
+          "count": 5,
+          "avatar": "citizen_1.jpg"
+        },
+        {
+          "name": "Doctor",
+          "nameFa": "دکتر",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "doctor_1.jpg"
+        },
+        {
+          "name": "Detective",
+          "nameFa": "کاراگاه",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "detective_1.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Mafia - Nostradamus 1.1",
+      "nameFa": "مافیا - نوسترآداموس ۱.۱",
+      "colorCode": 2,
+      "help": "",
+      "characters": [
+        {
+          "name": "Godfather",
+          "nameFa": "پدرخوانده",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "godfather_1.jpg"
+        },
+        {
+          "name": "Saul Goodman",
+          "nameFa": "ساول گودمن",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "saul_goodman_1.jpg"
+        },
+        {
+          "name": "Matador",
+          "nameFa": "ماتادور",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "mafia_2.jpg"
+        },
+        {
+          "name": "Mafia",
+          "nameFa": "مافیا ساده",
+          "color": "#f44336",
+          "count": 0,
+          "avatar": "mafia_1.jpg"
+        },
+        {
+          "name": "Nostradamus",
+          "nameFa": "نوسترآداموس",
+          "color": "#ffeb3b",
+          "count": 1,
+          "avatar": "nostradamus_1.jpg"
+        },
+        {
+          "name": "Citizen",
+          "nameFa": "شهروند ساده",
+          "color": "#2196f3",
+          "count": 3,
+          "avatar": "citizen_1.jpg"
+        },
+        {
+          "name": "Special Citizen",
+          "nameFa": "شهروند ویژه",
+          "color": "#2196f3",
+          "count": 0,
+          "avatar": "general_2.jpg"
+        },
+        {
+          "name": "Léon - The Professional",
+          "nameFa": "لئون - حرفه\u200cای ",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "leon_1.jpg"
+        },
+        {
+          "name": "Doctor Watson",
+          "nameFa": "دکتر واتسون",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "watson_1.jpg"
+        },
+        {
+          "name": "Citizen Kain",
+          "nameFa": "همشهری کین",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "citizen_kain_1.jpg"
+        },
+        {
+          "name": "Constantine",
+          "nameFa": "کنستانتین",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "constantine_1.jpg"
+        }
+      ],
+      "randomCards": [
+        {
+          "name": "Face/Off",
+          "nameFa": "تغییر چهره",
+          "color": "#f44336"
+        },
+        {
+          "name": "A Beautiful Mind",
+          "nameFa": "ذهن زیبا",
+          "color": "#ff9800"
+        },
+        {
+          "name": "The Silence of the Lambs",
+          "nameFa": "سکوت بره\u200cها",
+          "color": "#4caf50"
+        },
+        {
+          "name": "Handcuffs",
+          "nameFa": "دستبند",
+          "color": "#673ab7"
+        },
+        {
+          "name": "Identity",
+          "nameFa": "افشای هویت",
+          "color": "#2196f3"
+        }
+      ]
+    },
+    {
+      "name": "Mafia - Capo 1.1",
+      "nameFa": "مافیا - کاپو ۱.۱",
+      "colorCode": 6,
+      "help": "",
+      "characters": [
+        {
+          "name": "Don",
+          "nameFa": "دون مافیا",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "godfather_1.jpg"
+        },
+        {
+          "name": "Wizard",
+          "nameFa": "جادوگر",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "witch_1.jpg"
+        },
+        {
+          "name": "Executioner",
+          "nameFa": "جلاد",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "executioner_1.jpg"
+        },
+        {
+          "name": "Snitch",
+          "nameFa": "خبرچین",
+          "color": "#f44336",
+          "count": 0,
+          "avatar": "mafia_2.jpg"
+        },
+        {
+          "name": "Mafia",
+          "nameFa": "مافیا ساده",
+          "color": "#f44336",
+          "count": 0,
+          "avatar": "mafia_1.jpg"
+        },
+        {
+          "name": "Citizen",
+          "nameFa": "شهروند ساده",
+          "color": "#2196f3",
+          "count": 3,
+          "avatar": "citizen_1.jpg"
+        },
+        {
+          "name": "Special Citizen",
+          "nameFa": "شهروند ویژه",
+          "color": "#2196f3",
+          "count": 0,
+          "avatar": "general_2.jpg"
+        },
+        {
+          "name": "Herbalist",
+          "nameFa": "عطار",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "herbalist_1.jpg"
+        },
+        {
+          "name": "Armorer",
+          "nameFa": "زره ساز",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "armorer_1.jpg"
+        },
+        {
+          "name": "Detective",
+          "nameFa": "کاراگاه",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "detective_1.jpg"
+        },
+        {
+          "name": "Heir",
+          "nameFa": "وارث",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "heir_1.jpg"
+        },
+        {
+          "name": "Suspect",
+          "nameFa": "مظنون",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "suspect_1.jpg"
+        },
+        {
+          "name": "Mayor",
+          "nameFa": "کدخدا",
+          "color": "#2196f3",
+          "count": 0,
+          "avatar": "mayor_1.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Mafia - Zodiac 1.1",
+      "nameFa": "مافیا - زودیاک ۱.۱",
+      "colorCode": 7,
+      "help": "",
+      "characters": [
+        {
+          "name": "Al Capone",
+          "nameFa": "آلکاپون",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "godfather_1.jpg"
+        },
+        {
+          "name": "Magician",
+          "nameFa": "شعبده\u200cباز ",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "magician_1.jpg"
+        },
+        {
+          "name": "Bomber",
+          "nameFa": "بمبگذار",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "bomber_1.jpg"
+        },
+        {
+          "name": "Mafia",
+          "nameFa": "مافیا ساده",
+          "color": "#f44336",
+          "count": 0,
+          "avatar": "mafia_1.jpg"
+        },
+        {
+          "name": "Zodiac",
+          "nameFa": "زودیاک",
+          "color": "#ffeb3b",
+          "count": 1,
+          "avatar": "nostradamus_1.jpg"
+        },
+        {
+          "name": "Citizen",
+          "nameFa": "شهروند ساده",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "citizen_1.jpg"
+        },
+        {
+          "name": "Special Citizen",
+          "nameFa": "شهروند ویژه",
+          "color": "#2196f3",
+          "count": 0,
+          "avatar": "general_2.jpg"
+        },
+        {
+          "name": "Professional",
+          "nameFa": "حرفه\u200cای",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "professional_1.jpg"
+        },
+        {
+          "name": "Doctor",
+          "nameFa": "دکتر",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "doctor_1.jpg"
+        },
+        {
+          "name": "Detective",
+          "nameFa": "کاراگاه",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "detective_1.jpg"
+        },
+        {
+          "name": "Gunslinger",
+          "nameFa": "تفنگدار",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "gunslinger_1.jpg"
+        },
+        {
+          "name": "Ocean",
+          "nameFa": "اوشن",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "constantine_2.jpg"
+        },
+        {
+          "name": "Bodyguard",
+          "nameFa": "محافظ",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "guard_1.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Mafia - El Clásico 1.1",
+      "nameFa": "مافیا - ال کلاسیکو ۱.۱",
+      "colorCode": 3,
+      "help": "",
+      "characters": [
+        {
+          "name": "Pablo Escobar",
+          "nameFa": "پابلو اسکوبار",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "escobar_1.jpg"
+        },
+        {
+          "name": "Griselda Blanco",
+          "nameFa": "گریسلدا بلانکو",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "mafia_1.jpg"
+        },
+        {
+          "name": "Juan Velazquez",
+          "nameFa": "خوان ولاسکز",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "velazquez_1.jpg"
+        },
+        {
+          "name": "Winston Churchill",
+          "nameFa": "وینستون چرچیل",
+          "color": "#ffeb3b",
+          "count": 1,
+          "avatar": "churchill_1.jpg"
+        },
+        {
+          "name": "Citizen",
+          "nameFa": "شهروند ساده",
+          "color": "#2196f3",
+          "count": 3,
+          "avatar": "citizen_1.jpg"
+        },
+        {
+          "name": "Special Citizen",
+          "nameFa": "شهروند ویژه",
+          "color": "#2196f3",
+          "count": 0,
+          "avatar": "general_2.jpg"
+        },
+        {
+          "name": "Officer Martinez",
+          "nameFa": "افسر مارتینز",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "officer_1.jpg"
+        },
+        {
+          "name": "Doctor Bridget",
+          "nameFa": "دکتر بریجت",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "doctor_1.jpg"
+        },
+        {
+          "name": "Moreno",
+          "nameFa": "مورنو",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "gunslinger_1.jpg"
+        },
+        {
+          "name": "General Bonaparte",
+          "nameFa": "ژنرال بناپارت",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "general_1.jpg"
+        },
+        {
+          "name": "Charlie Chaplin",
+          "nameFa": "چارلی چاپلین",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "chaplin_1.jpg"
+        }
+      ],
+      "randomCards": [
+        {
+          "name": "Mirror",
+          "nameFa": "آینه",
+          "color": "#673ab7"
+        },
+        {
+          "name": "Role Guessing",
+          "nameFa": "حدس نقش",
+          "color": "#2196f3"
+        },
+        {
+          "name": "Vertigo",
+          "nameFa": "سرگیجه",
+          "color": "#ff9800"
+        },
+        {
+          "name": "Money Sa",
+          "nameFa": "مانی سا",
+          "color": "#f44336"
+        },
+        {
+          "name": "Dal",
+          "nameFa": "دال",
+          "color": "#4caf50"
+        }
+      ]
+    },
+    {
+      "name": "Mafia - James Bond 1.0",
+      "nameFa": "مافیا - جیمز باند ۱.۰",
+      "colorCode": 10,
+      "help": "",
+      "characters": [
+        {
+          "name": "James Bond",
+          "nameFa": "جیمز باند",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "bond_1.jpg"
+        },
+        {
+          "name": "Long John Silver",
+          "nameFa": "لانگ جان سیلور",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "johnsilver_1.jpg"
+        },
+        {
+          "name": "Wizard",
+          "nameFa": "ویزارد",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "wizard_1.jpg"
+        },
+        {
+          "name": "Mafia",
+          "nameFa": "مافیا ساده",
+          "color": "#f44336",
+          "count": 0,
+          "avatar": "bond_2.jpg"
+        },
+        {
+          "name": "Citizen",
+          "nameFa": "شهروند ساده",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "citizen_2.jpg"
+        },
+        {
+          "name": "Special Citizen",
+          "nameFa": "شهروند ویژه",
+          "color": "#2196f3",
+          "count": 0,
+          "avatar": "citizen_3.jpg"
+        },
+        {
+          "name": "Arthur Morgan",
+          "nameFa": "آرتور مورگان",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "arthur_1.jpg"
+        },
+        {
+          "name": "Doctor Helen",
+          "nameFa": "دکتر هلن",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "doctor_2.jpg"
+        },
+        {
+          "name": "Inspector Gadget",
+          "nameFa": "کارآگاه گجت",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "gadget_1.jpg"
+        },
+        {
+          "name": "Gladiator",
+          "nameFa": "گلادیاتور",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "gladiator_1.jpg"
+        },
+        {
+          "name": "Salvador",
+          "nameFa": "سالوادور",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "salvador_1.jpg"
+        },
+        {
+          "name": "Hobbit",
+          "nameFa": "هابیت",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "hobbit_1.jpg"
+        },
+        {
+          "name": "Maleficent",
+          "nameFa": "مالفیسنت",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "maleficent_1.jpg"
+        },
+        {
+          "name": "Robin Hood",
+          "nameFa": "رابین هود",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "robinhood_1.jpg"
+        }
+      ],
+      "randomCards": [
+        {
+          "name": "Handcuffs",
+          "nameFa": "دستبند",
+          "color": "#673ab7"
+        },
+        {
+          "name": "Identity",
+          "nameFa": "افشای هویت",
+          "color": "#2196f3"
+        },
+        {
+          "name": "Comeback",
+          "nameFa": "بازگشت",
+          "color": "#ff9800"
+        },
+        {
+          "name": "Revenge",
+          "nameFa": "انتقام",
+          "color": "#f44336"
+        },
+        {
+          "name": "The Silence of the Lambs",
+          "nameFa": "سکوت بره\u200cها",
+          "color": "#4caf50"
+        }
+      ]
+    },
+    {
+      "name": "Mafia - Interrogator 1.0",
+      "nameFa": "مافیا - بازپرس ۱.۰",
+      "colorCode": 4,
+      "help": "",
+      "characters": [
+        {
+          "name": "Godfather",
+          "nameFa": "رئیس مافیا",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "godfather_1.jpg"
+        },
+        {
+          "name": "Charlatan",
+          "nameFa": "شیاد",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "mafia_1.jpg"
+        },
+        {
+          "name": "Nato",
+          "nameFa": "ناتو",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "velazquez_1.jpg"
+        },
+        {
+          "name": "Mafia",
+          "nameFa": "مافیا ساده",
+          "color": "#f44336",
+          "count": 0,
+          "avatar": "mafia_2.jpg"
+        },
+        {
+          "name": "Citizen",
+          "nameFa": "شهروند ساده",
+          "color": "#2196f3",
+          "count": 2,
+          "avatar": "citizen_1.jpg"
+        },
+        {
+          "name": "Investigator",
+          "nameFa": "بازپرس",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "citizen_kain_1.jpg"
+        },
+        {
+          "name": "Doctor",
+          "nameFa": "دکتر",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "doctor_1.jpg"
+        },
+        {
+          "name": "Detective",
+          "nameFa": "کاراگاه",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "detective_1.jpg"
+        },
+        {
+          "name": "Researcher",
+          "nameFa": "محقق",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "suspect_1.jpg"
+        },
+        {
+          "name": "Bulletproof",
+          "nameFa": "رویین تن",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "general_2.jpg"
+        },
+        {
+          "name": "Sniper",
+          "nameFa": "تک تیرانداز",
+          "color": "#2196f3",
+          "count": 0,
+          "avatar": "officer_1.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Mafia - Representative 1.0",
+      "nameFa": "مافیا - نماینده ۱.۰",
+      "colorCode": 5,
+      "help": "",
+      "characters": [
+        {
+          "name": "Don",
+          "nameFa": "دون مافیا",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "godfather_1.jpg"
+        },
+        {
+          "name": "Outlaw",
+          "nameFa": "یاغی",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "mafia_1.jpg"
+        },
+        {
+          "name": "Hacker",
+          "nameFa": "هکر",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "bomber_1.jpg"
+        },
+        {
+          "name": "Nato",
+          "nameFa": "ناتو",
+          "color": "#f44336",
+          "count": 0,
+          "avatar": "velazquez_1.jpg"
+        },
+        {
+          "name": "Mafia",
+          "nameFa": "مافیا ساده",
+          "color": "#f44336",
+          "count": 0,
+          "avatar": "mafia_2.jpg"
+        },
+        {
+          "name": "Citizen",
+          "nameFa": "شهروند ساده",
+          "color": "#2196f3",
+          "count": 2,
+          "avatar": "citizen_1.jpg"
+        },
+        {
+          "name": "Guide",
+          "nameFa": "راهنما",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "citizen_kain_1.jpg"
+        },
+        {
+          "name": "Doctor",
+          "nameFa": "دکتر",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "doctor_1.jpg"
+        },
+        {
+          "name": "Mine Layer",
+          "nameFa": "مین‌گذار",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "heir_1.jpg"
+        },
+        {
+          "name": "Lawyer",
+          "nameFa": "وکیل",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "mayor_1.jpg"
+        },
+        {
+          "name": "Bodyguard",
+          "nameFa": "محافظ",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "general_2.jpg"
+        },
+        {
+          "name": "Soldier",
+          "nameFa": "سرباز",
+          "color": "#2196f3",
+          "count": 0,
+          "avatar": "officer_1.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Mafia - Commando 1.0",
+      "nameFa": "مافیا - تکاور ۱.۰",
+      "colorCode": 8,
+      "help": "",
+      "characters": [
+        {
+          "name": "Godfather",
+          "nameFa": "رئیس مافیا",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "godfather_1.jpg"
+        },
+        {
+          "name": "Kidnapper",
+          "nameFa": "گروگانگیر",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "escobar_1.jpg"
+        },
+        {
+          "name": "Nato",
+          "nameFa": "ناتو",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "velazquez_1.jpg"
+        },
+        {
+          "name": "Mafia",
+          "nameFa": "مافیا ساده",
+          "color": "#f44336",
+          "count": 0,
+          "avatar": "mafia_1.jpg"
+        },
+        {
+          "name": "Citizen",
+          "nameFa": "شهروند ساده",
+          "color": "#2196f3",
+          "count": 2,
+          "avatar": "citizen_1.jpg"
+        },
+        {
+          "name": "Commando",
+          "nameFa": "تکاور",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "officer_2.jpg"
+        },
+        {
+          "name": "Doctor",
+          "nameFa": "دکتر",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "doctor_1.jpg"
+        },
+        {
+          "name": "Detective",
+          "nameFa": "کاراگاه",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "detective_1.jpg"
+        },
+        {
+          "name": "Gunslinger",
+          "nameFa": "تفنگدار",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "gunslinger_1.jpg"
+        },
+        {
+          "name": "Guard",
+          "nameFa": "نگهبان",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "general_2.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Mafia - Negotiator 1.0",
+      "nameFa": "مافیا - مذاکره‌کننده ۱.۰",
+      "colorCode": 11,
+      "help": "",
+      "characters": [
+        {
+          "name": "Godfather",
+          "nameFa": "رئیس مافیا",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "godfather_1.jpg"
+        },
+        {
+          "name": "Negotiator",
+          "nameFa": "مذاکره‌کننده",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "blanco_1.jpg"
+        },
+        {
+          "name": "Mafia",
+          "nameFa": "مافیا ساده",
+          "color": "#f44336",
+          "count": 1,
+          "avatar": "mafia_2.jpg"
+        },
+        {
+          "name": "Citizen",
+          "nameFa": "شهروند ساده",
+          "color": "#2196f3",
+          "count": 2,
+          "avatar": "citizen_1.jpg"
+        },
+        {
+          "name": "Sniper",
+          "nameFa": "تک تیرانداز",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "officer_1.jpg"
+        },
+        {
+          "name": "Doctor",
+          "nameFa": "دکتر",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "doctor_1.jpg"
+        },
+        {
+          "name": "Detective",
+          "nameFa": "کاراگاه",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "detective_1.jpg"
+        },
+        {
+          "name": "Reporter",
+          "nameFa": "خبرنگار",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "heir_1.jpg"
+        },
+        {
+          "name": "Bulletproof",
+          "nameFa": "زره پوش",
+          "color": "#2196f3",
+          "count": 1,
+          "avatar": "general_2.jpg"
+        }
+      ]
+    }
+  ]
+}

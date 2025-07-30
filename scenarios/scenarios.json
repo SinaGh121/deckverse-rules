@@ -1,7 +1,7 @@
 {
   "scenarios": [
     {
-      "name": "Werewolf 1.4",
+      "name": "Werewolf 1.5",
       "nameFa": "گرگینه ۱.۴",
       "colorCode": 1,
       "help": "https://sinagh121.github.io/deckverse-rules/scenarios/werewolf/en/",
@@ -1016,7 +1016,7 @@
           "count": 1,
           "avatar": "general_2.jpg"
         }
-      ]
+      ] 
     }
   ]
 }

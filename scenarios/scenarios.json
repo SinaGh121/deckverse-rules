@@ -4,8 +4,8 @@
       "name": "Werewolf 1.4",
       "nameFa": "گرگینه ۱.۴",
       "colorCode": 1,
-      "help": "https://sinagh121.github.io/deckverse-rules/scenarios/werewolf/en/",
-      "helpFa": "https://sinagh121.github.io/deckverse-rules/scenarios/werewolf/fa/",
+      "help": "https://sinagh121.github.io/deckverse-rules/scenarios/werewolf/en/index.html",
+      "helpFa": "https://sinagh121.github.io/deckverse-rules/scenarios/werewolf/fa/index.html",
       "characters": [
         {
           "name": "Alpha",
@@ -1016,7 +1016,7 @@
           "count": 1,
           "avatar": "general_2.jpg"
         }
-      ] 
+      ]
     }
   ]
- }
+}

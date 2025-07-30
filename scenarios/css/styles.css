@@ -1,4 +1,7 @@
 :root {
+  --thumb-w: 200px;
+  --bg: #ffffff;
+  --fg: #0b0c0f;
   --row-blue: #2196f340;
   --row-orange: #ff980040;
   --row-green: #4caf5040;
@@ -7,14 +10,28 @@
   --row-yellow: #ffeb3b40;
 }
 
-:root {
-  --thumb-w: 200px;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0c0f;
+    --fg: #ffffff;
+  }
+}
+/* Force via URL: ?theme=light|dark */
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --fg: #0b0c0f;
+}
+:root[data-theme="dark"] {
+  --bg: #0b0c0f;
+  --fg: #ffffff;
 }
 
 html,
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
 }
 
 :lang(fa) body {

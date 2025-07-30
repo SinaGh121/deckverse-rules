@@ -689,3 +689,27 @@
 </body>
 
 </html>
+<script>
+  // Read ?theme=dark|light|auto and set data-theme early
+  (function () {
+    var p = new URLSearchParams(location.search).get('theme') || '';
+    var t = p.toLowerCase();
+    var theme = (t === 'dark' || t === 'light') ? t : 'auto';
+
+    var root = document.documentElement;
+    if (theme !== 'auto') root.setAttribute('data-theme', theme);
+
+    // Keep browser UI in sync (forms/scrollbars/address bar)
+    var cs = document.querySelector('meta[name="color-scheme"]') || (function () {
+      var m = document.createElement('meta'); m.name = 'color-scheme'; document.head.appendChild(m); return m;
+    })();
+    cs.content = theme === 'dark' ? 'dark' : (theme === 'light' ? 'light' : 'light dark');
+
+    // Optional: force <meta name="theme-color"> to match theme
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+      if (theme === 'auto') return;              // let media queries handle it
+      m.media = '';                               // disable media condition
+      m.content = theme === 'dark' ? '#0b0c0f' : '#ffffff';
+    });
+  })();
+</script>

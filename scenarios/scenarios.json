@@ -1,8 +1,8 @@
 {
   "scenarios": [
     {
-      "name": "Werewolf 1.4",
-      "nameFa": "گرگینه ۱.۴",
+      "name": "Werewolf 1.9",
+      "nameFa": "گرگینه ۱.۹",
       "colorCode": 1,
       "help": "https://sinagh121.github.io/deckverse-rules/scenarios/werewolf/en/index.html",
       "helpFa": "https://sinagh121.github.io/deckverse-rules/scenarios/werewolf/fa/index.html",
@@ -43,13 +43,6 @@
           "avatar": "villager_1.jpg"
         },
         {
-          "name": "Special Villager",
-          "nameFa": "روستایی ویژه",
-          "color": "#2196f3",
-          "count": 0,
-          "avatar": "general_2.jpg"
-        },
-        {
           "name": "Alchemist",
           "nameFa": "کیمیاگر",
           "color": "#2196f3",
@@ -78,11 +71,11 @@
           "avatar": "resurrector_1.jpg"
         },
         {
-          "name": "Hunter",
-          "nameFa": "شکارچی",
+          "name": "Woodsman",
+          "nameFa": "هیزم‌شکن",
           "color": "#2196f3",
           "count": 1,
-          "avatar": "hunter_1.jpg"
+          "avatar": "woodsman_1.jpg"
         },
         {
           "name": "Red Riding Hood",
@@ -90,6 +83,20 @@
           "color": "#2196f3",
           "count": 1,
           "avatar": "red_riding_hood_1.jpg"
+        },
+        {
+          "name": "Scarecrow",
+          "nameFa": "مترسک",
+          "color": "#2196f3",
+          "count": 0,
+          "avatar": "scarecrow_1.jpg"
+        },
+        {
+          "name": "Canary",
+          "nameFa": "قناری",
+          "color": "#2196f3",
+          "count": 0,
+          "avatar": "canary_1.jpg"
         }
       ]
     },

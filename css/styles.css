@@ -1,0 +1,130 @@
+:root {
+  --thumb-w: 200px;
+  --bg: #ffffff;
+  --fg: #0b0c0f;
+  --row-blue: #2196f340;
+  --row-orange: #ff980040;
+  --row-green: #4caf5040;
+  --row-purple: #9c27b040;
+  --row-red: #f4433640;
+  --row-yellow: #ffeb3b40;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0c0f;
+    --fg: #ffffff;
+  }
+}
+/* Force via URL: ?theme=light|dark */
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --fg: #0b0c0f;
+}
+:root[data-theme="dark"] {
+  --bg: #0b0c0f;
+  --fg: #ffffff;
+}
+
+html,
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+:lang(fa) body {
+  font-family: "Vazirmatn", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.page {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.role {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding-block: 16px;
+  flex-direction: row-reverse;
+}
+
+.role .thumb {
+  width: var(--thumb-w);
+  border-radius: 12px;
+}
+
+.role .desc {
+  flex: 1 1 0;
+  text-align: start;
+}
+
+@media (max-width: 600px) {
+  .role {
+    flex-direction: column;
+    gap: 0;
+  }
+  .role .thumb {
+    width: 100%;
+    max-width: var(--thumb-w);
+    flex: 0 0 auto;
+    margin-inline: auto;
+  }
+}
+
+table.role-grid {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: 1.2em;
+  table-layout: fixed;
+  --others: 6;
+}
+
+.role-grid col.col-first {
+  width: calc(2 * 100% / (var(--others) + 2));
+}
+.role-grid col.col-rest {
+  width: calc(100% / (var(--others) + 2));
+}
+
+.role-grid th,
+.role-grid td {
+  overflow-wrap: anywhere;
+  padding: 0.6em 0.8em;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid;
+}
+
+.role-grid th:first-child,
+.role-grid td:first-child {
+  text-align: start;
+}
+
+.role-grid caption {
+  caption-side: bottom;
+  text-align: start;
+  margin-block-start: 0.6em;
+}
+
+.role-grid .cell-blue {
+  background: var(--row-blue);
+}
+.role-grid .cell-orange {
+  background: var(--row-orange);
+}
+.role-grid .cell-green {
+  background: var(--row-green);
+}
+.role-grid .cell-purple {
+  background: var(--row-purple);
+}
+.role-grid .cell-red {
+  background: var(--row-red);
+}
+.role-grid .cell-yellow {
+  background: var(--row-yellow);
+}

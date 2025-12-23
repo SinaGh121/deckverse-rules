@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Opt in to both schemes -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)">
+    <title>
+        Don Club Scenarios
+    </title>
+
+    <!-- Load Vazirmatn -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles.css?v=1.0">
+</head>
+
+<body>
+    <article class="page">
+        <!-- Header -->
+        <header>
+            <h1>
+                Don Club Scenarios
+            </h1>
+            <p>
+                Speaking order and voting process - Version 1.0
+            </p>
+        </header>
+
+        <section id="speaking-order">
+            <h2>Speaking Order in Don Club Scenarios</h2>
+            <ul>
+                <li>
+                    Day 1: Start from player 1 and go clockwise up to player 10.
+                </li>
+                <li>
+                    Day 2: Start from player 10 and go counter-clockwise down to player 1.
+                </li>
+                <li>
+                    Day 3: Start from player 5 up to player 10, then from player 1 to player 4, clockwise from the
+                    middle of the deck.
+                </li>
+                <li>
+                    Day 4: Start from player 6 down to player 1, then from player 10 to player 7, counter-clockwise from
+                    the middle of the deck.
+                </li>
+                <li>
+                    Day 5: Same as day 1, then the five-day cycle repeats.
+                </li>
+            </ul>
+        </section>
+
+        <!-- <hr> -->
+
+        <p class="note">
+            This sequence is shown for a 10-player deck; keep the same pattern for other counts (e.g., with 12 players,
+            day 2 starts from player 6).
+        </p>
+
+        <section id="voting-process">
+            <h2>
+                Voting Process in Don Club Scenarios
+            </h2>
+
+            <h3>
+                Minimum votes for defense or elimination
+            </h3>
+            <ul>
+                <li>
+                    13 to 11 players: 5 votes for defense and 5 votes for elimination.
+                </li>
+                <li>
+                    10 to 8 players: 4 votes for defense and 4 votes for elimination.
+                </li>
+                <li>
+                    7 or 6 players: 3 votes for defense and 3 votes for elimination.
+                </li>
+                <li>
+                    5 or 4 players: 2 votes for defense and 2 votes for elimination.
+                </li>
+            </ul>
+
+            <h3>
+                Vote difference and single defense
+            </h3>
+            <ul>
+                <li>
+                    If the difference between two players reaches 3 votes or more, only the player with more votes goes
+                    to defense (single defense).
+                </li>
+                <li>
+                    If the difference is less than 3 votes, both players go to defense.
+                </li>
+            </ul>
+
+            <h3>
+                Record (Sabegheh)
+            </h3>
+            <ul>
+                <li>
+                    Every time a player goes to defense and survives, they gain one record point.
+                </li>
+                <li>
+                    If two players in defense receive the same number of elimination votes, the one with more record
+                    points is eliminated, even if the difference is only one.
+                </li>
+                <li>
+                    Being a target for the Capo gun or being interrogated does not count toward record points.
+                </li>
+            </ul>
+
+            <h3>
+                Voting rights inside defense
+            </h3>
+            <ul>
+                <li>
+                    If there are only two players in defense, they are not allowed to vote for each other.
+                </li>
+                <li>
+                    If there are three or more players in defense, they may vote for each other.
+                </li>
+            </ul>
+
+            <h3>
+                Target, Cover and "About"
+            </h3>
+            <ul>
+                <li>
+                    If there is a single player in defense, they may choose two speakers: one against them (target) and
+                    one supporting them (cover).
+                </li>
+                <li>
+                    If there are two players in defense, each of them may choose only one person to speak about them;
+                    there is no separate target and cover in this case.
+                </li>
+                <li>
+                    If there are three or more players in defense, none of them may choose anyone to speak about
+                    themselves; in this situation there is no target, no cover and no "about" for themselves.
+                </li>
+            </ul>
+        </section>
+    </article>
+</body>
+
+</html>
+<script>
+    // Read ?theme=dark|light|auto and set data-theme early
+    (function () {
+        var p = new URLSearchParams(location.search).get('theme') || '';
+        var t = p.toLowerCase();
+        var theme = (t === 'dark' || t === 'light') ? t : 'auto';
+
+        var root = document.documentElement;
+        if (theme !== 'auto') root.setAttribute('data-theme', theme);
+
+        // Keep browser UI in sync (forms/scrollbars/address bar)
+        var cs = document.querySelector('meta[name="color-scheme"]') || (function () {
+            var m = document.createElement('meta'); m.name = 'color-scheme'; document.head.appendChild(m); return m;
+        })();
+        cs.content = theme === 'dark' ? 'dark' : (theme === 'light' ? 'light' : 'light dark');
+
+        // Optional: force <meta name="theme-color"> to match theme
+        document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+            if (theme === 'auto') return;              // let media queries handle it
+            m.media = '';                               // disable media condition
+            m.content = theme === 'dark' ? '#0b0c0f' : '#ffffff';
+        });
+    })();
+</script>

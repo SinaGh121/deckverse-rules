@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Opt in to both schemes -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)">
+    <title>
+        سناریو گرگینه
+    </title>
+
+    <!-- Load Vazirmatn -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles.css?v=1.0">
+</head>
+
+<body>
+    <article class="page">
+        <!-- Header -->
+        <header>
+            <h1>
+                سناریو گرگینه
+            </h1>
+            <p>
+                نسخه گرگینه ۲.۰
+            </p>
+        </header>
+
+        <section id="players">
+            <h2>تعداد بازیکنان</h2>
+            <ul>
+                <li>
+                    بازهٔ ایده‌آل: ۸ تا ۱۳ نفر
+                </li>
+                <li>
+                    نسبت پیشنهادی: به‌ازای هر ۳ روستایی، ۱ گرگینه.
+                </li>
+            </ul>
+        </section>
+
+        <section id="groups">
+            <h2>
+                گروه‌ها و مدیریت
+            </h2>
+            <ul>
+                <li>
+                    دو گروه: روستاییان و گرگینه‌ها.
+                </li>
+                <li>
+                    بازی توسط نگهبان بازی هدایت می‌شود.
+                </li>
+            </ul>
+        </section>
+
+        <section id="winners">
+            <h2>
+                شرط پیروزی
+            </h2>
+            <ul>
+                <li>
+                    گرگینه‌ها: وقتی تعداد گرگینه‌های حاضر ≥ تعداد روستاییان شود.
+                </li>
+                <li>
+                    روستاییان: وقتی همهٔ گرگینه‌ها حذف شوند.
+                </li>
+                <li>
+                    مرحلهٔ دست‌دادن/کی‌آس (Chaos): اگر ابتدای روزی تعداد بازیکنان به ۳ نفر برسد:
+                    <ul>
+                        <li>
+                            ۲ دقیقه گفت‌وگوی آزاد.
+                        </li>
+                        <li>
+                            هر نفر باید یک بازیکن را به‌عنوان روستایی انتخاب و با او دست بدهد.
+                        </li>
+                        <li>
+                            اگر دو روستایی به‌هم دست بدهند ← روستا برنده است؛ در غیر این صورت گرگینه برنده می‌شود.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>
+                روز معارفه
+            </h2>
+            <ul>
+                <li>
+                    همه فقط نقش خود را می‌دانند؛ گرگینه‌ها هنوز هم‌تیمی‌هایشان را نمی‌شناسند.
+                </li>
+                <li>
+                    صحبت‌ها به‌صورت چرخشی، حداکثر ۱ دقیقه برای هر نفر.
+                </li>
+                <li>
+                    چالش و رأی‌گیری ندارد.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>
+                شب معارفه
+            </h2>
+            <ul>
+                <li>
+                    نگهبان بازی تیم گرگینه را بیدار می‌کند تا هم‌تیمی‌ها را بشناسند.
+                </li>
+            </ul>
+        </section>
+
+        <section id="game-days">
+            <h2>
+                روزهای بازی
+            </h2>
+            <ul>
+                <li>
+                    صحبت‌ها به‌صورت چرخشی (ساعت‌گرد یا پادساعت‌گرد)، حداکثر ۱ دقیقه برای هر نفر.
+                </li>
+                <li>
+                    سایرین می‌توانند با علامت دست نظر دهند.
+                </li>
+                <li>
+                    هر بازیکن می‌تواند با علامت دست از نفر در حال صحبت درخواست چالش کند و ۳۰ ثانیه خارج از نوبت صحبت
+                    کند.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Voting -->
+        <section id="voting">
+            <h2>
+                رأی‌گیری
+            </h2>
+
+            <h4>
+                مرحلهٔ ۱: نامزدی برای دفاع
+            </h4>
+            <ul>
+                <li>
+                    هر بازیکن می‌تواند به چند نفر رأی نامزدی بدهد.
+                </li>
+                <li>
+                    هر کس که حداقل نصف رو به بالا از آرا را بگیرد، وارد دفاع می‌شود.
+                    مثال: با ۵ یا ۶ نفر، ۳ رأی لازم است.
+                </li>
+            </ul>
+
+            <h4>
+                مرحلهٔ ۲: دفاع
+            </h4>
+            <ul>
+                <li>
+                    هر نامزد ۱ دقیقه دفاع می‌کند.
+                </li>
+                <li>
+                    در طول دفاع، هرگونه واکنش (لایک/دیس‌لایک و...) ممنوع؛ تخلف ← سلب حق رأی در همان روز.
+                </li>
+            </ul>
+
+            <h4>
+                مرحلهٔ ۳: رأی مرگ
+            </h4>
+            <ul>
+                <li>
+                    اگر یک نفر در دفاع است: با رأی حداقل نصف رو به بالا حذف می‌شود.
+                </li>
+                <li>
+                    اگر چند نفر در دفاع‌اند: بیشترین رأی حذف می‌شود.
+                </li>
+                <li>
+                    اگر دو یا چند نفر رای مساوی داشته باشند: هیچ‌کس حذف نمی‌شود.
+                </li>
+                <li>
+                    تساوی در رأی ← هیچ‌کس حذف نمی‌شود.
+                </li>
+                <li>
+                    نامزدهای در دفاع حق رأی دارند.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Will -->
+        <section id="will">
+            <h4>
+                وصیت
+            </h4>
+            <p>
+                کسی که با رأی اکثریت حذف می‌شود، می‌تواند یک وصیت کوتاه (تا ۱ دقیقه) بگوید. افشای نقش همچنان ممنوع است.
+            </p>
+        </section>
+
+        <section id="nights">
+            <h2>
+                شب‌های بازی
+            </h2>
+            <h4>
+                ترتیب بیدار شدن نقش ها
+            </h4>
+            <ul>
+                <li>
+                    هیزم‌شکن — اگر روز قبل با رأی حذف شده باشد (برای تعیین همراه).
+                </li>
+                <li>
+                    گرگینه‌ها
+                </li>
+                <li>
+                    محافظ
+                </li>
+                <li>
+                    پیشگو
+                </li>
+                <li>
+                    احیاگر
+                </li>
+                <li>
+                    کیمیاگر
+                </li>
+                <li>
+                    هیزم‌شکن — اگر همین شب توسط گرگینه‌ها کشته شده باشد (برای تعیین همراه).
+                </li>
+            </ul>
+
+            <h4>
+                سلاخی
+            </h4>
+            <ul>
+                <li>
+                    هر شب، گرگینه‌ها می‌توانند به‌جای حملهٔ معمول یا تبدیل، نقش دقیق یک بازیکن را حدس بزنند و او را
+                    سلاخی کنند.
+                </li>
+                <li>
+                    اگر حدس درست باشد، بازیکن فوراً حذف می‌شود؛ اگر غلط باشد، اقدام شبانهٔ گرگینه‌ها مصرف می‌شود و از
+                    جانب آنان
+                    مرگی رخ نمی‌دهد.
+                </li>
+                <li>
+                    سنجش براساس نقش اولیهٔ کارت است؛ اگر کسی در طول بازی به روستایی ساده تبدیل شده باشد، معیار همچنان
+                    نقش اولیه
+                    است.
+                </li>
+                <li>
+                    وجود یا عدم وجود آلفا تاثیری ندارد؛ گرگینه‌های باقی‌مانده با توافق جمعی می‌توانند سلاخی کنند.
+                </li>
+                <li>
+                    اگر سلاخی رخ دهد، نگهبان بازی صبح اعلام می‌کند که بازیکن «سلاخی شده» است.
+                </li>
+            </ul>
+
+            <h4>
+                هیزم‌شکن
+            </h4>
+            <ul>
+                <li>
+                    با خروج هیزم شکن، نگهبان خروج او را اعلام می کند، هیزم شکن همان لحظه یک بازیکن را به عنوان همراه
+                    معرفی می کند
+                    و نگهبان نام او را اعلام می کند.
+                </li>
+                <li>
+                    نتیجه همان لحظه اعلام می شود؛ در صورت موفقیت همراه فوراً حذف می شود.
+                </li>
+            </ul>
+
+            <h4>
+                کیمیاگر
+            </h4>
+            <ul>
+                <li>
+                    پس از پایان هر شب و پیش از باز شدن چشم‌ها، نگهبان از همه می‌خواهد یک دست خود را جلو بیاورند. اگر
+                    بازیکنی با
+                    توانایی کیمیاگر به گرگینه تبدیل شده باشد، نگهبان دست او را لمس می‌کند.
+                </li>
+                <li>
+                    بازیکن تبدیل‌شده تا شب بعد گرگینه‌های دیگر را نمی‌شناسد و آن‌ها نیز از پیوستن او بی‌خبرند.
+                </li>
+            </ul>
+
+            <h2>
+                استعلام
+            </h2>
+            <ul>
+                <li>
+                    ابتدای هر روز، بازیکنان می‌توانند از نگهبان بخواهند اعلام کند چند روستایی و چند گرگینه تا این لحظه
+                    از بازی
+                    خارج شده‌اند.
+                </li>
+                <li>
+                    در بازی ۹ تا ۱۳ نفره، حداکثر ۲ استعلام مجاز است. (تعداد استعلام‌ها متناسب با تعداد بازیکنان است.)
+                </li>
+            </ul>
+        </section>
+
+        <section id="discipline">
+            <h2>
+                ممنوعیت افشا
+            </h2>
+            <ul>
+                <li>
+                    افشای نقش یا توانایی‌های شبانه مطلقاً ممنوع (مستقیم یا غیرمستقیم). تخلف ← حذف در ابتدای روز بعد.
+                </li>
+                <li>
+                    تنها مجازید به روستایی ساده، گرگینه‌ها یا افراد خارج از بازی اشاره کنید.
+                </li>
+                <li>
+                    ادعای قطعی درباره گرگینه بودن کسی از سوی پیشگو بر پایه استعلام مثبت و بدون استدلال روز ممنوع است. در
+                    صورت
+                    تخلف، پیشگو در ابتدای روز بعد حذف می شود.
+                </li>
+            </ul>
+        </section>
+
+        <section id="roles">
+            <h2>
+                نقش‌ها
+            </h2>
+            <h3>
+                گرگینه‌ها
+            </h3>
+            <div class="roles">
+                <!-- Alpha -->
+                <article class="role" id="role-alpha">
+                    <img class="thumb" src="../../images/alpha_1.jpg" alt="آلفا" />
+                    <div class="desc">
+                        <h4>
+                            آلفا (Alpha)
+                        </h4>
+                        <ul>
+                            <li>
+                                دارای یک سپر که او را در برابر حمله هیزم‌شکن یا تبدیل کیمیاگر، مقاوم می‌کند.
+                            </li>
+                            <li>
+                                در استعلام پیشگو به عنوان روستایی گزارش می شود.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Black Wolf -->
+                <article class="role" id="role-black-wolf">
+                    <img class="thumb" src="../../images/werewolf_5.jpg" alt="گرگ سیاه" />
+                    <div class="desc">
+                        <h4>
+                            گرگ سیاه (Black Wolf)
+                        </h4>
+                        <ul>
+                            <li>
+                                می‌تواند یک روستایی ساده را به گرگینه تبدیل کند.
+                            </li>
+                            <li>
+                                فقط روستایی ساده قابل تبدیل است و نقش‌های خاص مانند پیشگو، هیزم شکن و محافظ قابل تبدیل
+                                نیستند.
+                            </li>
+                            <li>
+                                بازیکن تبدیل‌شده در همان شب با گرگینه‌ها چشم باز می‌کند و به تیم آنان می‌پیوندد.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Wizard -->
+                <article class="role" id="role-wizard">
+                    <img class="thumb" src="../../images/poisoner_1.jpg" alt="جادوگر" />
+                    <div class="desc">
+                        <h4>
+                            جادوگر (Wizard)
+                        </h4>
+                        <ul>
+                            <li>
+                                هر شب یک بازیکن را هدف می‌گیرد و توانایی او را برای همان شب و روز بعد غیرفعال یا معکوس
+                                می‌کند.
+                            </li>
+                            <li>
+                                اثر جادو فقط در همان شب و روز بعد برقرار است و پس از آن از بین می‌رود.
+                            </li>
+                        </ul>
+                        <p>مثال‌ها:</p>
+                        <ul>
+                            <li>
+                                محافظ: پس از جادو شدن نمی‌تواند از کسی محافظت کند.
+                            </li>
+                            <li>
+                                پیشگو: اگر جادو شود نتیجه استعلام او معکوس می شود.
+                            </li>
+                            <li>
+                                هیزم‌شکن: در صورت مرگ حملهٔ او بی‌اثر است.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Werewolf -->
+                <article class="role" id="role-werewolf">
+                    <img class="thumb" src="../../images/werewolf_2.jpg" alt="گرگینه" />
+                    <div class="desc">
+                        <h4>
+                            گرگینه (Werewolf)
+                        </h4>
+                        <ul>
+                            <li>
+                                بازیکنانی که در طول بازی به گرگینه تبدیل شوند، این نقش را دریافت می‌کنند.
+                            </li>
+                            <li>
+                                هر شب، همراه با سایر گرگینه‌ها چشم باز می‌کند و در تصمیم‌گیری‌های شبانه شرکت می‌کند.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <h3>
+                روستاییان
+            </h3>
+
+            <div class="roles">
+                <!-- Villager -->
+                <article class="role" id="role-villager">
+                    <img class="thumb" src="../../images/villager_1.jpg" alt="روستایی" />
+                    <div class="desc">
+                        <h4>
+                            روستایی (Villager)
+                        </h4>
+                        <ul>
+                            <li>
+                                نقش پایه و بدون توانایی شبانه است؛ تنها ابزارش گفت‌وگو، استدلال و رأی‌دادن در روز است.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Guard -->
+                <article class="role" id="role-guard">
+                    <img class="thumb" src="../../images/guard_1.jpg" alt="محافظ" />
+                    <div class="desc">
+                        <h4>
+                            محافظ (Guard)
+                        </h4>
+                        <ul>
+                            <li>
+                                هر شب می‌تواند یک نفر را محافظت کند.
+                            </li>
+                            <li>
+                                محافظت در برابر همه حملات شبانه مؤثر است به جز سلاخی در صورت حدس درست نقش، محکومیت در
+                                رأی‌گیری روز، و
+                                تبدیل گرگ سیاه روی روستایی ساده.
+                            </li>
+                            <li>
+                                نمی‌تواند دو شب پیاپی از خود یا از یک نفر مشخص محافظت کند.
+                            </li>
+                            <li>
+                                اگر جادو شود، توانایی او در آن شب بی‌اثر است و کسی محافظت نمی‌شود.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Seer -->
+                <article class="role" id="role-seer">
+                    <img class="thumb" src="../../images/seer_1.jpg" alt="پیشگو" />
+                    <div class="desc">
+                        <h4>
+                            پیشگو (Seer)
+                        </h4>
+                        <ul>
+                            <li>
+                                هر شب استعلام یک بازیکن را می گیرد و نتیجه را به صورت روستایی یا گرگینه دریافت می کند.
+                            </li>
+                            <li>
+                                نگهبان نتیجه استعلام را با علامت دست اعلام می کند لایک یعنی گرگینه و دیسلایک یعنی
+                                روستایی.
+                            </li>
+                            <li>
+                                اگر جادو شده باشد نتیجه استعلام معکوس می شود.
+                            </li>
+                            <li>
+                                استعلام آلفا همواره روستایی گزارش می شود.
+                            </li>
+                            <li>
+                                استعلام مترسک همواره گرگینه گزارش می شود.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Resurrector -->
+                <article class="role" id="role-resurrector">
+                    <img class="thumb" src="../../images/resurrector_1.jpg" alt="احیاگر" />
+                    <div class="desc">
+                        <h4>
+                            احیاگر (Resurrector)
+                        </h4>
+                        <ul>
+                            <li>
+                                یک بار در بازی می‌تواند یک بازیکن حذف شده را احیا کند.
+                            </li>
+                            <li>
+                                احیای بازیکنی که با سلاخی حذف شده یا هیزم‌شکن باشد مجاز نیست.
+                            </li>
+                            <li>
+                                اگر در شبی که قصد احیا دارد جادو شود احیایی انجام نمی‌شود و خودش به روستایی ساده تبدیل
+                                می‌شود.
+                            </li>
+                            <li>
+                                پس از نخستین استفاده توانایی او از بین می‌رود و به روستایی ساده تبدیل می‌شود.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Alchemist -->
+                <article class="role" id="role-alchemist">
+                    <img class="thumb" src="../../images/alchemist_1.jpg" alt="کیمیاگر" />
+                    <div class="desc">
+                        <h4>
+                            کیمیاگر (Alchemist)
+                        </h4>
+                        <ul>
+                            <li>
+                                فقط یک بار در کل بازی اقدام می‌کند؛ پس از آن به روستایی ساده تبدیل می‌شود.
+                            </li>
+                            <li>
+                                شب یک هدف برمی‌گزیند؛ اگر هدف گرگینه باشد کشته می‌شود و اگر روستایی ساده‌ای باشد که در
+                                ابتدای بازی کارت
+                                روستایی ساده گرفته است به گرگینه تبدیل می‌شود.
+                            </li>
+                            <li>
+                                روی روستاییان نقش‌دار اثری ندارد و توانایی مصرف می‌شود.
+                            </li>
+                            <li>
+                                آلفای دارای سپر و هر هدف تحت محافظت گارد در آن شب از اثر مصون‌اند.
+                            </li>
+                            <li>
+                                اگر همان شب جادو شود اقدامی رخ نمی‌دهد و توانایی او از بین می‌رود.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Woodsman -->
+                <article class="role" id="role-woodsman">
+                    <img class="thumb" src="../../images/woodsman_1.jpg" alt="هیزم‌شکن" />
+                    <div class="desc">
+                        <h4>
+                            هیزم‌شکن (Woodsman)
+                        </h4>
+                        <ul>
+                            <li>
+                                اگر در شب با حمله گرگینه ها کشته شود در پایان همان شب می تواند یک بازیکن را از بازی خارج
+                                کند. اگر در روز
+                                با رای حذف شود ابتدای شب بعد می تواند یک نفر را خارج کند.
+                            </li>
+                            <li>
+                                اگر با سلاخی کشته شود حق حذف ندارد و اگر همان روز زیر اثر جادوگر باشد اقدامش بی اثر می
+                                شود.
+                            </li>
+                            <li>
+                                هدف های نامعتبر برای اقدام هیزم شکن عبارت اند از آلفا با سپر فعال مترسک با سپر فعال و هر
+                                بازیکنی که تحت
+                                حفاظت محافظ باشد.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Red Riding Hood -->
+                <article class="role" id="role-rrh">
+                    <img class="thumb" src="../../images/red_riding_hood_1.jpg" alt="شنل قرمزی" />
+                    <div class="desc">
+                        <h4>
+                            شنل قرمزی (Red Riding Hood)
+                        </h4>
+                        <ul>
+                            <li>
+                                تا زمانی که هیزم شکن زنده است در برابر حمله شبانه گرگینه ها مصون است.
+                            </li>
+                            <li>
+                                با مرگ هیزم شکن مصونیت او از بین می رود و به روستایی ساده تبدیل می شود.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Scarecrow -->
+                <article class="role" id="role-scarecrow">
+                    <img class="thumb" src="../../images/scarecrow_1.jpg" alt="مترسک" />
+                    <div class="desc">
+                        <h4>
+                            مترسک (Scarecrow)
+                        </h4>
+                        <ul>
+                            <li>
+                                اگر به دفاعیه برود باید سکوت کامل داشته باشد وگرنه همان لحظه حذف می‌شود.
+                            </li>
+                            <li>
+                                استعلام پیشگو درباره او همیشه گرگینه گزارش می‌شود.
+                            </li>
+                            <li>
+                                یک سپر یک‌بارمصرف دارد که او را در برابر یک حمله گرگینه یا حمله هیزم‌شکن حفظ می‌کند و پس
+                                از مصرف از بین
+                                می‌رود.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Canary -->
+                <article class="role" id="role-canary">
+                    <img class="thumb" src="../../images/canary_1.jpg" alt="قناری" />
+                    <div class="desc">
+                        <h4>
+                            قناری (Canary)
+                        </h4>
+                        <ul>
+                            <li>
+                                کارت قناری در دِک اصلی نیست؛ شب معارفه نگهبان یکی از روستاییان ساده را به‌عنوان قناری
+                                برمی‌گزیند، قناری
+                                از آن بی‌خبر می‌ماند و فقط به گرگینه‌ها معرفی می‌شود.
+                            </li>
+                            <li>
+                                اگر قناری به هر شکل از بازی خارج شود، گرگینه‌ها در شب بعد هیچ اقدامی ندارند؛ نه حمله، نه
+                                سلاخی، نه
+                                تبدیل. این تعلیق اعلام عمومی ندارد.
+                            </li>
+                            <li>
+                                قناری قابل تبدیل نیست و از نظر قواعد «نقش‌دار» محسوب می‌شود نه روستایی ساده.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Roles Setup Table -->
+        <section id="setup">
+            <h2>چیدمان نقش‌ها</h2>
+            <table class="role-grid" id="roleGrid">
+                <caption>
+                    نکته: در سناریوهای ۸ و ۹ نفره، گرگ سیاه حضور ندارد؛ اما هر دو گرگینه توانایی «تبدیل» گرگ سیاه را
+                    دارند.
+                </caption>
+
+                <!-- colgroup: first col = 2 units, others = 1 unit -->
+                <colgroup>
+                    <col class="col-first">
+                    <col class="col-rest" span="6"><!-- 6 other columns -->
+                </colgroup>
+
+                <thead>
+                    <tr class="cell-green">
+                        <th>بازیکنان</th>
+                        <th>۸</th>
+                        <th>۹</th>
+                        <th>۱۰</th>
+                        <th>۱۱</th>
+                        <th>۱۲</th>
+                        <th>۱۳</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cell-red">
+                        <td>آلفا</td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-red">
+                        <td>گرگ سیاه</td>
+                        <td></td>
+                        <td></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-red">
+                        <td>جادوگر</td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-purple">
+                        <td>روستایی</td>
+                        <td><span>●●</span></td>
+                        <td><span>●●</span></td>
+                        <td><span>●●</span></td>
+                        <td><span>●●</span></td>
+                        <td><span>●●</span></td>
+                        <td><span>●●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>محافظ</td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>پیشگو</td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>احیاگر</td>
+                        <td></td>
+                        <td></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>کیمیاگر</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>هیزم‌شکن</td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>شنل قرمزی</td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>مترسک</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>قناری</td>
+                        <td></td>
+                        <td><span>●</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-orange">
+                        <td>استعلام</td>
+                        <td>●</td>
+                        <td>●●</td>
+                        <td>●●</td>
+                        <td>●●</td>
+                        <td>●●</td>
+                        <td>●●</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </article>
+</body>
+
+</html>
+<script>
+    // Read ?theme=dark|light|auto and set data-theme early
+    (function () {
+        var p = new URLSearchParams(location.search).get('theme') || '';
+        var t = p.toLowerCase();
+        var theme = (t === 'dark' || t === 'light') ? t : 'auto';
+
+        var root = document.documentElement;
+        if (theme !== 'auto') root.setAttribute('data-theme', theme);
+
+        // Keep browser UI in sync (forms/scrollbars/address bar)
+        var cs = document.querySelector('meta[name="color-scheme"]') || (function () {
+            var m = document.createElement('meta'); m.name = 'color-scheme'; document.head.appendChild(m); return m;
+        })();
+        cs.content = theme === 'dark' ? 'dark' : (theme === 'light' ? 'light' : 'light dark');
+
+        // Optional: force <meta name="theme-color"> to match theme
+        document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+            if (theme === 'auto') return;              // let media queries handle it
+            m.media = '';                               // disable media condition
+            m.content = theme === 'dark' ? '#0b0c0f' : '#ffffff';
+        });
+    })();
+</script>

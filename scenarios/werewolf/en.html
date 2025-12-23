@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Opt in to both schemes -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)">
+    <title>
+        Werewolf Scenario
+    </title>
+
+    <!-- Load Vazirmatn -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles.css?v=1.0">
+</head>
+
+<body>
+    <article class="page">
+        <!-- Header -->
+        <header>
+            <h1>
+                Werewolf Scenario
+            </h1>
+            <p>
+                Version 2.0
+            </p>
+        </header>
+
+        <section id="players">
+            <h2>Number of Players</h2>
+            <ul>
+                <li>
+                    Ideal range: 8 to 13 players.
+                </li>
+                <li>
+                    Recommended ratio: 1 werewolf for every 3 villagers.
+                </li>
+            </ul>
+        </section>
+
+        <section id="groups">
+            <h2>
+                Teams & Moderation
+            </h2>
+            <ul>
+                <li>
+                    Two teams: Villagers and Werewolves.
+                </li>
+                <li>
+                    The game is run by the Moderator.
+                </li>
+            </ul>
+        </section>
+
+        <section id="winners">
+            <h2>
+                Win Conditions
+            </h2>
+            <ul>
+                <li>
+                    Werewolves: when the number of living werewolves is greater than or equal to the number of living
+                    villagers.
+                </li>
+                <li>
+                    Villagers: when all werewolves are eliminated.
+                </li>
+                <li>
+                    Handshake/Chaos phase: if at the start of a day only 3 players remain:
+                    <ul>
+                        <li>
+                            2 minutes of open discussion.
+                        </li>
+                        <li>
+                            Each player must pick one player as a Villager and shake hands with them.
+                        </li>
+                        <li>
+                            If the two Villagers shake hands, the Village wins; otherwise, the Werewolves win.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>
+                Introduction Day
+            </h2>
+            <ul>
+                <li>
+                    Everyone only knows their own role; the werewolves do not yet know their teammates.
+                </li>
+                <li>
+                    Turn-based talking, max 1 minute per player.
+                </li>
+                <li>
+                    No challenges and no voting.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>
+                Introduction Night
+            </h2>
+            <ul>
+                <li>
+                    The Moderator wakes the werewolf team so they learn their teammates.
+                </li>
+            </ul>
+        </section>
+
+        <section id="game-days">
+            <h2>
+                Days
+            </h2>
+            <ul>
+                <li>
+                    Turn-based talking, max 1 minute per player.
+                </li>
+                <li>
+                    Others may signal to react by raising a hand.
+                </li>
+                <li>
+                    Any player may, by raising a hand, request a challenge from the current speaker and speak out of
+                    turn for 30
+                    seconds.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Voting -->
+        <section id="voting">
+            <h2>
+                Voting
+            </h2>
+
+            <h4>
+                Stage 1: Nomination for Defense
+            </h4>
+            <ul>
+                <li>
+                    Each player may nominate multiple people.
+                </li>
+                <li>
+                    Anyone receiving at least half the votes, rounded up, goes to defense.
+                    Example: with 5 or 6 players, 3 votes are required.
+                </li>
+            </ul>
+
+            <h4>
+                Stage 2: Defense
+            </h4>
+            <ul>
+                <li>
+                    Each nominee defends for 1 minute.
+                </li>
+                <li>
+                    During a defense, any reactions (like/dislike, etc.) are forbidden; violation removes your voting
+                    right for
+                    that day.
+                </li>
+            </ul>
+
+            <h4>
+                Stage 3: Elimination Vote
+            </h4>
+            <ul>
+                <li>
+                    If only one person is in defense: they are eliminated with at least half the votes, rounded up.
+                </li>
+                <li>
+                    If multiple people are in defense: the highest vote-getter is eliminated.
+                </li>
+                <li>
+                    If there is a tie between two or more players: no one is eliminated.
+                </li>
+                <li>
+                    A tie results in no elimination.
+                </li>
+                <li>
+                    Nominees in defense still have voting rights.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Will -->
+        <section id="will">
+            <h4>
+                Will
+            </h4>
+            <p>
+                A player eliminated by majority vote may give a short will (up to 1 minute). Role disclosure remains
+                forbidden.
+            </p>
+        </section>
+
+        <section id="nights">
+            <h2>
+                Nights
+            </h2>
+            <h4>
+                Wake Order
+            </h4>
+            <ul>
+                <li>
+                    Woodsman — if eliminated by vote during the previous day (to choose a companion).
+                </li>
+                <li>
+                    Werewolves
+                </li>
+                <li>
+                    Guard
+                </li>
+                <li>
+                    Seer
+                </li>
+                <li>
+                    Resurrector
+                </li>
+                <li>
+                    Alchemist
+                </li>
+                <li>
+                    Woodsman — if killed by werewolves this night (to choose a companion).
+                </li>
+            </ul>
+
+            <h4>
+                Butchery
+            </h4>
+            <ul>
+                <li>
+                    Each night, instead of the usual attack or a conversion, the werewolves may guess a player’s exact
+                    role and
+                    butcher them.
+                </li>
+                <li>
+                    If the guess is correct, the player is immediately eliminated; if wrong, the werewolves’ night
+                    action is spent
+                    and no death occurs from them.
+                </li>
+                <li>
+                    The check is against the player’s initial role card; if someone was turned into a Vanilla Villager
+                    during the
+                    game, the initial role still applies.
+                </li>
+                <li>
+                    The presence or absence of Alpha does not matter; the remaining werewolves may agree collectively to
+                    perform a
+                    butchery.
+                </li>
+                <li>
+                    If a butchery happens, the Moderator announces in the morning that the player was “butchered.”
+                </li>
+            </ul>
+
+            <h4>
+                Woodsman
+            </h4>
+            <ul>
+                <li>
+                    When the Woodsman leaves the game, the Moderator announces it; the Woodsman immediately names one
+                    player as a
+                    companion to take down with them, and the Moderator announces that name.
+                </li>
+                <li>
+                    The result is immediate; if successful, the companion is eliminated at once.
+                </li>
+            </ul>
+
+            <h4>
+                Alchemist
+            </h4>
+            <ul>
+                <li>
+                    After each night and before eyes open, the Moderator asks everyone to extend one hand. If a player
+                    has been
+                    converted into a werewolf by the Alchemist’s ability, the Moderator touches that player’s hand.
+                </li>
+                <li>
+                    The converted player does not know the other werewolves until the next night, and the werewolves are
+                    unaware
+                    of their joining until then.
+                </li>
+            </ul>
+
+            <h2>
+                Status Checks
+            </h2>
+            <ul>
+                <li>
+                    At the start of any day, players may ask the Moderator to announce how many villagers and how many
+                    werewolves
+                    have been eliminated so far.
+                </li>
+                <li>
+                    In 9 to 13 player games, at most 2 checks are allowed. (The number of checks scales with player
+                    count.)
+                </li>
+            </ul>
+        </section>
+
+        <section id="discipline">
+            <h2>
+                No Role Disclosure
+            </h2>
+            <ul>
+                <li>
+                    Revealing roles or night abilities is strictly forbidden (directly or indirectly). Violation leads
+                    to
+                    elimination at the start of the next day.
+                </li>
+                <li>
+                    You may only reference Vanilla Villager, Werewolves, or people outside the game.
+                </li>
+                <li>
+                    The Seer may not make a definitive claim that someone is a werewolf based solely on a positive check
+                    without
+                    daytime reasoning. If this rule is broken, the Seer is eliminated at the start of the next day.
+                </li>
+            </ul>
+        </section>
+
+        <section id="roles">
+            <h2>
+                Roles
+            </h2>
+            <h3>
+                Werewolves
+            </h3>
+            <div class="roles">
+                <!-- Alpha -->
+                <article class="role" id="role-alpha">
+                    <img class="thumb" src="../../images/alpha_1.jpg" alt="Alpha" />
+                    <div class="desc">
+                        <h4>
+                            Alpha
+                        </h4>
+                        <ul>
+                            <li>
+                                Has a shield that protects against the Woodsman’s attack or the Alchemist’s conversion.
+                            </li>
+                            <li>
+                                Appears as Villager to the Seer.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Black Wolf -->
+                <article class="role" id="role-black-wolf">
+                    <img class="thumb" src="../../images/werewolf_5.jpg" alt="Black Wolf" />
+                    <div class="desc">
+                        <h4>
+                            Black Wolf
+                        </h4>
+                        <ul>
+                            <li>
+                                Can convert a Vanilla Villager into a Werewolf.
+                            </li>
+                            <li>
+                                Only Vanilla Villagers can be converted; special roles like Seer, Woodsman, and Guard
+                                cannot be
+                                converted.
+                            </li>
+                            <li>
+                                The converted player opens eyes with the werewolves that same night and joins their
+                                team.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Wizard -->
+                <article class="role" id="role-wizard">
+                    <img class="thumb" src="../../images/poisoner_1.jpg" alt="Wizard" />
+                    <div class="desc">
+                        <h4>
+                            Wizard
+                        </h4>
+                        <ul>
+                            <li>
+                                Each night targets one player and disables or inverts their ability for that night and
+                                the following
+                                day.
+                            </li>
+                            <li>
+                                The effect lasts only for that night and the next day, then expires.
+                            </li>
+                        </ul>
+                        <p>Examples:</p>
+                        <ul>
+                            <li>
+                                Guard: after being bewitched, cannot protect anyone.
+                            </li>
+                            <li>
+                                Seer: if bewitched, the check result is inverted.
+                            </li>
+                            <li>
+                                Woodsman: if killed while bewitched, their attack is nullified.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Werewolf -->
+                <article class="role" id="role-werewolf">
+                    <img class="thumb" src="../../images/werewolf_2.jpg" alt="Werewolf" />
+                    <div class="desc">
+                        <h4>
+                            Werewolf
+                        </h4>
+                        <ul>
+                            <li>
+                                Players who become werewolves during the game receive this role.
+                            </li>
+                            <li>
+                                Each night, opens eyes with the other werewolves and participates in night decisions.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <h3>
+                Villagers
+            </h3>
+
+            <div class="roles">
+                <!-- Villager -->
+                <article class="role" id="role-villager">
+                    <img class="thumb" src="../../images/villager_1.jpg" alt="Villager" />
+                    <div class="desc">
+                        <h4>
+                            Villager
+                        </h4>
+                        <ul>
+                            <li>
+                                The baseline role with no night ability; relies on discussion, reasoning, and daytime
+                                voting.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Guard -->
+                <article class="role" id="role-guard">
+                    <img class="thumb" src="../../images/guard_1.jpg" alt="Guard" />
+                    <div class="desc">
+                        <h4>
+                            Guard
+                        </h4>
+                        <ul>
+                            <li>
+                                May protect one player each night.
+                            </li>
+                            <li>
+                                Protection works against all night attacks except a correct Butchery, daytime
+                                elimination, and Black
+                                Wolf conversion on a Vanilla Villager.
+                            </li>
+                            <li>
+                                Cannot protect themself or the same player on consecutive nights.
+                            </li>
+                            <li>
+                                If bewitched, their ability is ineffective that night and no one is protected.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Seer -->
+                <article class="role" id="role-seer">
+                    <img class="thumb" src="../../images/seer_1.jpg" alt="Seer" />
+                    <div class="desc">
+                        <h4>
+                            Seer
+                        </h4>
+                        <ul>
+                            <li>
+                                Each night checks one player and receives the result as Villager or Werewolf.
+                            </li>
+                            <li>
+                                The Moderator reports the result via hand gesture: thumbs up means Werewolf, thumbs down
+                                means Villager.
+                            </li>
+                            <li>
+                                If bewitched, the result is inverted.
+                            </li>
+                            <li>
+                                Checking Alpha always reports Villager.
+                            </li>
+                            <li>
+                                Checking Scarecrow always reports Werewolf.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Resurrector -->
+                <article class="role" id="role-resurrector">
+                    <img class="thumb" src="../../images/resurrector_1.jpg" alt="Resurrector" />
+                    <div class="desc">
+                        <h4>
+                            Resurrector
+                        </h4>
+                        <ul>
+                            <li>
+                                May revive one eliminated player once per game.
+                            </li>
+                            <li>
+                                Reviving a butchered player or the Woodsman is not allowed.
+                            </li>
+                            <li>
+                                If bewitched on the night they intend to revive, no revival happens and they become a
+                                Vanilla Villager.
+                            </li>
+                            <li>
+                                After the first use, their ability is lost and they become a Vanilla Villager.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Alchemist -->
+                <article class="role" id="role-alchemist">
+                    <img class="thumb" src="../../images/alchemist_1.jpg" alt="Alchemist" />
+                    <div class="desc">
+                        <h4>
+                            Alchemist
+                        </h4>
+                        <ul>
+                            <li>
+                                Acts only once during the whole game; afterwards becomes a Vanilla Villager.
+                            </li>
+                            <li>
+                                At night chooses a target; if the target is a Werewolf, they die. If the target is a
+                                Vanilla Villager
+                                who started the game as a Vanilla Villager, they are converted into a Werewolf.
+                            </li>
+                            <li>
+                                Has no effect on powered villagers, and the ability is consumed.
+                            </li>
+                            <li>
+                                Alpha with an active shield and any target protected by the Guard that night are immune.
+                            </li>
+                            <li>
+                                If bewitched that same night, no action occurs and the ability is lost.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Woodsman -->
+                <article class="role" id="role-woodsman">
+                    <img class="thumb" src="../../images/woodsman_1.jpg" alt="Woodsman" />
+                    <div class="desc">
+                        <h4>
+                            Woodsman
+                        </h4>
+                        <ul>
+                            <li>
+                                If killed at night by the werewolves, at the end of that night they may eliminate one
+                                player. If
+                                eliminated by vote during the day, at the start of the next night they may eliminate one
+                                player.
+                            </li>
+                            <li>
+                                If butchered, they have no right to eliminate; if bewitched that day, their action is
+                                nullified.
+                            </li>
+                            <li>
+                                Invalid targets for the Woodsman: Alpha with an active shield, Scarecrow with an active
+                                shield, and any
+                                player protected by the Guard.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Red Riding Hood -->
+                <article class="role" id="role-rrh">
+                    <img class="thumb" src="../../images/red_riding_hood_1.jpg" alt="Red Riding Hood" />
+                    <div class="desc">
+                        <h4>
+                            Red Riding Hood
+                        </h4>
+                        <ul>
+                            <li>
+                                While the Woodsman is alive, is immune to the werewolves’ night attack.
+                            </li>
+                            <li>
+                                When the Woodsman dies, this immunity is lost and Red Riding Hood becomes a Vanilla
+                                Villager.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Scarecrow -->
+                <article class="role" id="role-scarecrow">
+                    <img class="thumb" src="../../images/scarecrow_1.jpg" alt="Scarecrow" />
+                    <div class="desc">
+                        <h4>
+                            Scarecrow
+                        </h4>
+                        <ul>
+                            <li>
+                                If put on defense, must remain completely silent; otherwise is eliminated immediately.
+                            </li>
+                            <li>
+                                The Seer’s check on Scarecrow always reports Werewolf.
+                            </li>
+                            <li>
+                                Has a one-time shield that protects against one werewolf attack or one Woodsman attack,
+                                then it is
+                                consumed.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Canary -->
+                <article class="role" id="role-canary">
+                    <img class="thumb" src="../../images/canary_1.jpg" alt="Canary" />
+                    <div class="desc">
+                        <h4>
+                            Canary
+                        </h4>
+                        <ul>
+                            <li>
+                                The Canary card is not in the main deck; during Introduction Night, the Moderator
+                                secretly designates
+                                one Vanilla Villager as the Canary. The Canary is unaware and is introduced only to the
+                                werewolves.
+                            </li>
+                            <li>
+                                If the Canary leaves the game in any way, on the next night the werewolves have no
+                                action: no attack, no
+                                butchery, no conversion. This suspension is not publicly announced.
+                            </li>
+                            <li>
+                                The Canary cannot be converted and is considered a powered role (not a Vanilla Villager)
+                                for rules
+                                purposes.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Roles Setup Table -->
+        <section id="setup">
+            <h2>Role Setup</h2>
+            <table class="role-grid" id="roleGrid">
+                <caption>
+                    Note: In 8 and 9 player scenarios, Black Wolf is absent; however, both werewolves have the Black
+                    Wolf
+                    "conversion" ability.
+                </caption>
+
+                <!-- colgroup: first col = 2 units, others = 1 unit -->
+                <colgroup>
+                    <col class="col-first">
+                    <col class="col-rest" span="6"><!-- 6 other columns -->
+                </colgroup>
+
+                <thead>
+                    <tr class="cell-green">
+                        <th>Players</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>10</th>
+                        <th>11</th>
+                        <th>12</th>
+                        <th>13</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cell-red">
+                        <td>Alpha</td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-red">
+                        <td>Black Wolf</td>
+                        <td></td>
+                        <td></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-red">
+                        <td>Wizard</td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-purple">
+                        <td>Villager</td>
+                        <td><span>●●</span></td>
+                        <td><span>●●</span></td>
+                        <td><span>●●</span></td>
+                        <td><span>●●</span></td>
+                        <td><span>●●</span></td>
+                        <td><span>●●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>Guard</td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>Seer</td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>Resurrector</td>
+                        <td></td>
+                        <td></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>Alchemist</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>Woodsman</td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>Red Riding Hood</td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>Scarecrow</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span>●</span></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-blue">
+                        <td>Canary</td>
+                        <td></td>
+                        <td><span>●</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span>●</span></td>
+                    </tr>
+                    <tr class="cell-orange">
+                        <td>Status Checks</td>
+                        <td>●</td>
+                        <td>●●</td>
+                        <td>●●</td>
+                        <td>●●</td>
+                        <td>●●</td>
+                        <td>●●</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </article>
+</body>
+
+</html>
+<script>
+    // Read ?theme=dark|light|auto and set data-theme early
+    (function () {
+        var p = new URLSearchParams(location.search).get('theme') || '';
+        var t = p.toLowerCase();
+        var theme = (t === 'dark' || t === 'light') ? t : 'auto';
+
+        var root = document.documentElement;
+        if (theme !== 'auto') root.setAttribute('data-theme', theme);
+
+        // Keep browser UI in sync (forms/scrollbars/address bar)
+        var cs = document.querySelector('meta[name="color-scheme"]') || (function () {
+            var m = document.createElement('meta'); m.name = 'color-scheme'; document.head.appendChild(m); return m;
+        })();
+        cs.content = theme === 'dark' ? 'dark' : (theme === 'light' ? 'light' : 'light dark');
+
+        // Optional: force <meta name="theme-color"> to match theme
+        document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+            if (theme === 'auto') return;              // let media queries handle it
+            m.media = '';                               // disable media condition
+            m.content = theme === 'dark' ? '#0b0c0f' : '#ffffff';
+        });
+    })();
+</script>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Opt in to both schemes -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)">
+    <title>
+        Mafia - Bounty on the Boss
+    </title>
+
+    <!-- Load Vazirmatn -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles.css?v=1.0">
+</head>
+
+<body>
+    <article class="page">
+        <!-- Header -->
+        <header>
+            <h1>
+                Mafia - Bounty on the Boss
+            </h1>
+            <p>
+                Advanced Mafia scenario guide - Version 1.0
+            </p>
+        </header>
+
+        <section id="intro">
+            <h2>Scenario Overview</h2>
+            <p>
+                This is the “Bounty on the Boss” variant (common in advanced Mafia). Two key roles create instant win
+                conditions if they are eliminated by daytime voting.
+            </p>
+        </section>
+
+        <section id="summary">
+            <h2>Quick Summary</h2>
+            <ul>
+                <li>
+                    If the <strong>Godfather</strong> is eliminated by daytime vote, the <strong>Mafia immediately
+                        lose</strong>.
+                </li>
+                <li>
+                    If the <strong>Doctor</strong> is eliminated by daytime vote, the <strong>Town immediately
+                        lose</strong>.
+                </li>
+                <li>
+                    All other win conditions follow standard advanced Mafia rules.
+                </li>
+            </ul>
+        </section>
+
+        <section id="setup">
+            <h2>Suggested Roles (15 players)</h2>
+            <h3>Mafia Team (5)</h3>
+            <ul>
+                <li>Godfather (Mafia boss)</li>
+                <li>Terrorist</li>
+                <li>Natasha (Silencer)</li>
+                <li>Lawyer</li>
+                <li>Vanilla Mafia</li>
+            </ul>
+            <h3>Town Team (10)</h3>
+            <ul>
+                <li>Doctor</li>
+                <li>Judge</li>
+                <li>Detective</li>
+                <li>Priest</li>
+                <li>Sniper</li>
+                <li>Bodyguard</li>
+                <li>4 Vanilla Towns</li>
+            </ul>
+            <p class="note">
+                Declaring “vanilla town” is allowed in this scenario.
+            </p>
+        </section>
+
+        <section id="win-conditions">
+            <h2>Win Conditions</h2>
+            <h3>Standard</h3>
+            <ul>
+                <li>Town win: all Mafia are eliminated.</li>
+                <li>Mafia win: Mafia count becomes equal to town count.</li>
+            </ul>
+            <h3>Bounty Conditions</h3>
+            <ul>
+                <li>If the <strong>Godfather</strong> is voted out during the day: <strong>instant town win</strong>.
+                </li>
+                <li>If the <strong>Doctor</strong> is voted out during the day: <strong>instant Mafia win</strong>.
+                </li>
+            </ul>
+        </section>
+
+        <section id="intro-night">
+            <h2>Introduction Night (Night 0)</h2>
+            <p>The moderator introduces roles so teams learn teammates.</p>
+            <h3>Mafia Intro</h3>
+            <ul>
+                <li>Mafia wake together and learn each other.</li>
+                <li>Godfather makes the night shot decision with team input.</li>
+            </ul>
+            <h3>Godfather Swap (Night 0 only)</h3>
+            <ul>
+                <li>
+                    Godfather may <strong>once</strong>, and <strong>only on Night 0</strong>, swap their role with
+                    another Mafia member.
+                </li>
+                <li>They give Godfather to someone else and take that player’s Mafia role.</li>
+            </ul>
+            <h3>Town Intro</h3>
+            <ul>
+                <li>Key town power roles are introduced (Detective, Doctor, Judge, Sniper, Bodyguard, Priest).</li>
+                <li>
+                    In this scenario, <strong>the Judge sees the Doctor’s and Godfather’s likes together</strong> on
+                    Night 0 but cannot tell which is which.
+                </li>
+            </ul>
+        </section>
+
+        <section id="roles">
+            <h2>Roles & Rules</h2>
+
+            <h3>Godfather (Mafia)</h3>
+            <ul>
+                <li>Decides the night shot (with Mafia consultation).</li>
+                <li>Detective check on Godfather is <strong>negative</strong>.</li>
+                <li>
+                    If Sniper shoots Godfather, Godfather dies but this <strong>does not trigger</strong> the bounty
+                    win; bounty only triggers if voted out by day.
+                </li>
+            </ul>
+
+            <h3>Terrorist (Mafia)</h3>
+            <ul>
+                <li>Daytime suicide role.</li>
+                <li>May declare terror only during the day and <strong>before voting starts</strong>.</li>
+                <li>After moderator confirms, chooses one player to die with them.</li>
+                <li>If Sniper kills Terrorist at night, terror does not trigger.</li>
+                <li>If Terrorist is voted out, terror does not trigger.</li>
+            </ul>
+
+            <h3>Natasha (Silencer, Mafia)</h3>
+            <ul>
+                <li>Silences one player each night.</li>
+                <li>Silenced player cannot speak, vote, or react the next day.</li>
+                <li>Cannot silence the same player on consecutive nights.</li>
+            </ul>
+
+            <h3>Lawyer (Mafia)</h3>
+            <ul>
+                <li>Selects one player nightly.</li>
+                <li>That player’s Detective result is <strong>inverted</strong> for that night.</li>
+                <li>Can invert Godfather’s result as well.</li>
+            </ul>
+
+            <h3>Vanilla Mafia</h3>
+            <ul>
+                <li>No special ability.</li>
+                <li>Wakes at night to know and consult with the team.</li>
+            </ul>
+
+            <h3>Priest (Town)</h3>
+            <ul>
+                <li>Counter to Natasha.</li>
+                <li>Each night has two picks:
+                    <ul>
+                        <li>First: “unsilence” target.</li>
+                        <li>Second: grant “extra speech” to target.</li>
+                    </ul>
+                </li>
+                <li>If Priest and Natasha pick the same target in one night, there is <strong>no silence</strong> next
+                    day.</li>
+                <li>Priest’s second target gets extra speaking time next day and often starts the day’s talking (per
+                    moderator).</li>
+            </ul>
+
+            <h3>Detective (Town)</h3>
+            <ul>
+                <li>Checks one player each night.</li>
+                <li>Results in this scenario:
+                    <ul>
+                        <li>Godfather: negative</li>
+                        <li>Towns: negative</li>
+                        <li>Other Mafia: positive</li>
+                    </ul>
+                </li>
+                <li>Must watch for Lawyer because results can be inverted.</li>
+            </ul>
+
+            <h3>Sniper (Town)</h3>
+            <ul>
+                <li>Limited shots (announced by moderator).</li>
+                <li>May shoot each night.</li>
+                <li>If Sniper kills a town, there is no fireback; the citizen dies.</li>
+                <li>If Sniper kills Terrorist at night, terror does not trigger.</li>
+            </ul>
+
+            <h3>Bodyguard (Town)</h3>
+            <ul>
+                <li>Counter to Terrorist.</li>
+                <li>When Terrorist declares and names a target, Bodyguard has a short window (e.g., 5 seconds) to stand
+                    in.</li>
+                <li>If on time: <strong>Bodyguard and Terrorist both die</strong>; target survives.</li>
+                <li>
+                    While Terrorist is alive, Bodyguard is night-immune to Mafia shots (cannot be killed at night by
+                    Mafia).
+                </li>
+            </ul>
+
+            <h3>Doctor (Town)</h3>
+            <ul>
+                <li>Each night may save one player from the Mafia shot.</li>
+                <li>Self-save allowed.</li>
+                <li>Number of effective saves depends on player count (common: two saves above a threshold, single save
+                    below it).</li>
+            </ul>
+
+            <h3>Judge (Town)</h3>
+            <ul>
+                <li>Once per game may return a player who was voted out.</li>
+                <li>Suggested sequence:
+                    <ul>
+                        <li>Voted-out player gives a short will.</li>
+                        <li>Everyone sleeps; Judge wakes alone to decide to return or confirm elimination.</li>
+                    </ul>
+                </li>
+                <li>After first use, Judge becomes Vanilla Town.</li>
+                <li>
+                    Scenario note: on Night 0, Judge sees two “likes” belonging to Doctor and Godfather but cannot
+                    distinguish them.
+                </li>
+            </ul>
+
+            <h3>Vanilla Town</h3>
+            <ul>
+                <li>No special ability.</li>
+                <li>Declaring vanilla town is allowed in this scenario.</li>
+            </ul>
+        </section>
+
+        <section id="night-order">
+            <h2>Suggested Night Order (Moderator)</h2>
+            <p>Keep a fixed order to avoid clashes:</p>
+            <ol>
+                <li>Mafia wake and consult.</li>
+                <li>Godfather decides the night shot.</li>
+                <li>Natasha (silence).</li>
+                <li>Lawyer (invert check).</li>
+                <li>Doctor (save).</li>
+                <li>Detective (check).</li>
+                <li>Priest (unsilence and extra speech).</li>
+                <li>Sniper (if shooting).</li>
+                <li>All sleep.</li>
+            </ol>
+        </section>
+
+        <section id="day-flow">
+            <h2>Suggested Day Flow</h2>
+            <ol>
+                <li>Announce night results (deaths, saves, silences, extra speech per rules).</li>
+                <li>Talks and defenses.</li>
+                <li>Terrorist declaration (if desired) <strong>before voting</strong>.</li>
+                <li>Voting.</li>
+                <li>If someone is voted:
+                    <ul>
+                        <li>Will (short speech) then Judge decision (if using).</li>
+                    </ul>
+                </li>
+                <li>Check win conditions (standard and bounty).</li>
+            </ol>
+        </section>
+
+        <section id="notes">
+            <h2>Key Execution Notes</h2>
+            <ul>
+                <li>Bounty triggers only on daytime votes, not night deaths.</li>
+                <li>Clarify timers before play:
+                    <ul>
+                        <li>Bodyguard reaction window vs. Terrorist.</li>
+                        <li>Extra speech duration.</li>
+                        <li>Defense and voting rules.</li>
+                    </ul>
+                </li>
+                <li>Moderator should announce clearly:
+                    <ul>
+                        <li>Sniper bullet count.</li>
+                        <li>Doctor’s two-save vs. one-save threshold.</li>
+                        <li>Priest’s extra speech timing and order.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </article>
+</body>
+
+</html>
+<script>
+    // Read ?theme=dark|light|auto and set data-theme early
+    (function () {
+        var p = new URLSearchParams(location.search).get('theme') || '';
+        var t = p.toLowerCase();
+        var theme = (t === 'dark' || t === 'light') ? t : 'auto';
+
+        var root = document.documentElement;
+        if (theme !== 'auto') root.setAttribute('data-theme', theme);
+
+        // Keep browser UI in sync (forms/scrollbars/address bar)
+        var cs = document.querySelector('meta[name="color-scheme"]') || (function () {
+            var m = document.createElement('meta'); m.name = 'color-scheme'; document.head.appendChild(m); return m;
+        })();
+        cs.content = theme === 'dark' ? 'dark' : (theme === 'light' ? 'light' : 'light dark');
+
+        // Optional: force <meta name="theme-color"> to match theme
+        document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+            if (theme === 'auto') return;              // let media queries handle it
+            m.media = '';                               // disable media condition
+            m.content = theme === 'dark' ? '#0b0c0f' : '#ffffff';
+        });
+    })();
+</script>

@@ -12,9 +12,9 @@
 </head>
 <body>
   <article class="page">
-    <header><h1>Shahname Mafia Scenario</h1><p>Version 2.1</p></header>
+    <header><h1>Shahname Mafia Scenario</h1><p>Version 1.1</p></header>
 
-    <section id="intro"><h2>Scenario Overview</h2><p>Shahname is a 10-player Mafia scenario played by two main sides: Ahriman and Light.</p></section>
+    <section id="intro"><h2>Scenario Overview</h2><p>Shahname is a 10-player Mafia scenario played by two main sides: Ahriman and Light.</p><p>This scenario was designed by Den Entertainment Group.</p></section>
     <section id="teams"><h2>Teams</h2><ul><li>Ahriman: Zahhak, Bof, and Afrasiyab.</li><li>Light: Simorgh, Jamasb, Kaveh the Blacksmith, Rostam, Arash the Archer, and two Light Allies.</li></ul></section>
     <section id="start"><h2>Game Start and Introduction Day</h2><ul><li>The game starts with an introduction day.</li><li>During the introduction day, players only know their own roles and Ahriman members do not know one another yet.</li><li>During the introduction night, Ahriman members identify one another and roles are confirmed for the moderator.</li></ul></section>
     <section id="association"><h2>Game Association</h2><ul><li>Association members: Rostam, Kaveh the Blacksmith, and Zahhak.</li><li>The association only confirms one-on-one duels.</li></ul></section>
@@ -39,3 +39,27 @@
   </article>
 </body>
 </html>
+<script>
+  // Read ?theme=dark|light|auto and set data-theme early
+  (function () {
+    var p = new URLSearchParams(location.search).get('theme') || '';
+    var t = p.toLowerCase();
+    var theme = (t === 'dark' || t === 'light') ? t : 'auto';
+
+    var root = document.documentElement;
+    if (theme !== 'auto') root.setAttribute('data-theme', theme);
+
+    // Keep browser UI in sync (forms/scrollbars/address bar)
+    var cs = document.querySelector('meta[name="color-scheme"]') || (function () {
+      var m = document.createElement('meta'); m.name = 'color-scheme'; document.head.appendChild(m); return m;
+    })();
+    cs.content = theme === 'dark' ? 'dark' : (theme === 'light' ? 'light' : 'light dark');
+
+    // Optional: force <meta name="theme-color"> to match theme
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+      if (theme === 'auto') return;
+      m.media = '';
+      m.content = theme === 'dark' ? '#0b0c0f' : '#ffffff';
+    });
+  })();
+</script>

@@ -12,9 +12,9 @@
 </head>
 <body>
   <article class="page">
-    <header><h1>سناریو شاهنامه بازی مافیا</h1><p>نسخه ۲.۱</p></header>
+    <header><h1>سناریو شاهنامه بازی مافیا</h1><p>نسخه ۱.۱</p></header>
 
-    <section id="intro"><h2>معرفی سناریو شاهنامه</h2><p>شاهنامه سناریوی ۱۰ نفره بازی مافیاست که در دو گروه اصلی بازی می‌شود: گروه اهریمن و گروه روشنایی.</p></section>
+    <section id="intro"><h2>معرفی سناریو شاهنامه</h2><p>شاهنامه سناریوی ۱۰ نفره بازی مافیاست که در دو گروه اصلی بازی می‌شود: گروه اهریمن و گروه روشنایی.</p><p>این سناریو توسط گروه سرگرمی دن طراحی شده است.</p></section>
     <section id="teams"><h2>گروه‌ها</h2><ul><li>اهریمن‌ها: ضحاک، بوف و افراسیاب.</li><li>روشنایی‌ها: سیمرغ، جاماسب، کاوه آهنگر، رستم، آرش کمانگیر و دو یار روشنایی.</li></ul></section>
     <section id="start"><h2>شروع بازی و روز معارفه</h2><ul><li>بازی با روز معارفه شروع می‌شود.</li><li>در روز معارفه بازیکنان فقط نقش خودشان را می‌دانند و اعضای گروه اهریمن هنوز یکدیگر را نمی‌شناسند.</li><li>در شب معارفه، اعضای گروه اهریمن با یکدیگر آشنا می‌شوند و نقش‌ها برای راوی تأیید می‌شوند.</li></ul></section>
     <section id="association"><h2>انجمن بازی</h2><ul><li>اعضای انجمن: رستم، کاوه آهنگر و ضحاک.</li><li>وظیفه انجمن فقط تأیید مبارزه تن‌به‌تن است.</li></ul></section>
@@ -39,3 +39,27 @@
   </article>
 </body>
 </html>
+<script>
+  // Read ?theme=dark|light|auto and set data-theme early
+  (function () {
+    var p = new URLSearchParams(location.search).get('theme') || '';
+    var t = p.toLowerCase();
+    var theme = (t === 'dark' || t === 'light') ? t : 'auto';
+
+    var root = document.documentElement;
+    if (theme !== 'auto') root.setAttribute('data-theme', theme);
+
+    // Keep browser UI in sync (forms/scrollbars/address bar)
+    var cs = document.querySelector('meta[name="color-scheme"]') || (function () {
+      var m = document.createElement('meta'); m.name = 'color-scheme'; document.head.appendChild(m); return m;
+    })();
+    cs.content = theme === 'dark' ? 'dark' : (theme === 'light' ? 'light' : 'light dark');
+
+    // Optional: force <meta name="theme-color"> to match theme
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+      if (theme === 'auto') return;
+      m.media = '';
+      m.content = theme === 'dark' ? '#0b0c0f' : '#ffffff';
+    });
+  })();
+</script>
